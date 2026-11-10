@@ -4,9 +4,9 @@
 
 ## 1_gpt2_decoder
 GPT-2-style decoder (our Phase 1 model)
-**Best:** `p4__gpt2__gpt2-pred-phase4.ipynb`
+**Best:** `00_BEST__p4__gpt2__gpt2-pred-phase4.ipynb`
 
-* `p4__gpt2__gpt2-pred-phase4.ipynb`
+* `00_BEST__p4__gpt2__gpt2-pred-phase4.ipynb`
 * `p4__gpt2__cjpe_gpt2_new.ipynb`
 
 ## 2_modernbert_encoder
@@ -31,9 +31,9 @@ Other Phase 1 architectures (Mamba, RWKV, RetNet) and architecture-comparison no
 
 ## 6_multi_architecture_pipelines
 Pipelines that train or compare several architectures in one notebook
-**Best:** `p4__gpt2+modernbert+t5+bilstm__didnt_submit_fullrun.ipynb`
+**Best:** `00_BEST__p4__gpt2+modernbert+t5+bilstm__didnt_submit_fullrun.ipynb`
 
-* `p4__gpt2+modernbert+t5+bilstm__didnt_submit_fullrun.ipynb`
+* `00_BEST__p4__gpt2+modernbert+t5+bilstm__didnt_submit_fullrun.ipynb`
 * `p4__gpt2+modernbert+t5+bilstm__cjpe_v3_required_techniques__3393974db1_c01.ipynb`
 * `p4__gpt2+modernbert+t5+bilstm__cjpe_v3_required_techniques__3393974db1_c00.ipynb`
 * `p4__gpt2+modernbert+t5+bilstm__cjpe_best_runs.ipynb`

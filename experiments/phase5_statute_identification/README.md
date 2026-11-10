@@ -50,7 +50,7 @@ E4 BiLSTM never ran. Part 4 improvements are built but their run was never seen.
 | file | cells | size | first line |
 |---|---|---|---|
 | `p5__gpt2+modernbert+t5+bilstm__lsi_part2_experiments_e4_e5__cs781_phase5.ipynb` | 19 | 106 KB | # CS781 Phase 5 (statute identification) — PART 2 of 2: restore Part 1, experiments E4 and E5, ensemble, rule check, final prediction.json * |
-| `p5__gpt2+modernbert+t5+bilstm__lsi_part3_better_predictions__cs781_phase5.ipynb` | 23 | 108 KB | # CS781 Phase 5 — PART 3: better predictions from the finished experiments (stacker, more seeds, longer training, rare-statute losses, 8 win |
+| `00_BEST__p5__gpt2+modernbert+t5+bilstm__lsi_part3_better_predictions__cs781_phase5.ipynb` | 23 | 108 KB | # CS781 Phase 5 — PART 3: better predictions from the finished experiments (stacker, more seeds, longer training, rare-statute losses, 8 win |
 | `p5__gpt2+modernbert+t5+bilstm__lsi_part1_baselines_window_test__cs781_phase5.ipynb` | 22 | 110 KB | # CS781 Phase 5 (statute identification) — PART 1 of 2: baselines, window test, experiments E1, E6, E2, E3, backup **Why two parts:** the si |
 | `p5__gpt2+modernbert+t5+bilstm__lsi_all_experiments.ipynb` | 28 | 124 KB | # CS781 Phase 5 — Legal Statute Identification (LSI): multi-label prediction of statute ids, with every capstone requirement built in **Data |
 | `p5__gpt2+modernbert+t5+bilstm__lsi_all_experiments_alt.ipynb` | 28 | 126 KB | # CS781 Phase 5 — Legal Statute Identification (LSI): multi-label prediction of statute ids, with every capstone requirement built in **Data |

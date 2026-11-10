@@ -37,9 +37,9 @@ Best system, not a single run: F_final_rule_safe 0.3702 = local Phase 7/predicti
 | file | cells | size | first line |
 |---|---|---|---|
 | `p7__modernbert__pcr_six_experiments_modernbert_biencoder__16525fdb51.ipynb` | 21 | 86 KB | # CS781 Phase 7 — PRIOR CASE RETRIEVAL: one notebook, Phase 1 ModernBERT bi-encoder, six experiments, prediction.json (micro-F1@7) **Deadlin |
-| `p7__bilstm__bilstm_retriever.ipynb` | 22 | 100 KB | # CS781 Phase 7 — BiLSTM RETRIEVER: implementation, a new Kaggle dataset that stores the model, and the predictions **What this notebook is. |
+| `00_BEST__p7__bilstm__bilstm_retriever.ipynb` | 22 | 100 KB | # CS781 Phase 7 — BiLSTM RETRIEVER: implementation, a new Kaggle dataset that stores the model, and the predictions **What this notebook is. |
 | `p7__modernbert__fast_predict.ipynb` | 23 | 99 KB | # CS781 Phase 7 — FAST PREDICTIONS from the saved checkpoints (about 20-35 minutes; nothing is trained) For when time is short. It uses the  |
-| `p7__modernbert__nb2.ipynb` | 27 | 104 KB | # CS781 Phase 7 — PART 2: pool-aware re-ranking, n-gram BM25, ensembles, more chunks, round-2 hard negatives, citation context, cross-encode |
+| `00_BEST__p7__modernbert__nb2.ipynb` | 27 | 104 KB | # CS781 Phase 7 — PART 2: pool-aware re-ranking, n-gram BM25, ensembles, more chunks, round-2 hard negatives, citation context, cross-encode |
 | `p7__modernbert__more_predictions.ipynb` | 10 | 33 KB | # CS781 Phase 7 — MORE PREDICTION FILES in about 2 minutes (CPU only, nothing is trained, no GPU needed) The fast notebook wrote one file (t |
 | `p7__modernbert__part2_improvements.ipynb` | 26 | 113 KB | # CS781 Phase 7 — PART 2: pool-aware re-ranking, n-gram BM25, ensembles, more chunks, round-2 hard negatives, citation context, cross-encode |
 | `p7__modernbert__part2_improvements_pack.ipynb` | 26 | 113 KB | # CS781 Phase 7 — PART 2: pool-aware re-ranking, n-gram BM25, ensembles, more chunks, round-2 hard negatives, citation context, cross-encode |

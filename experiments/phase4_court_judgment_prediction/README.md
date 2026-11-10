@@ -38,8 +38,8 @@ Codabench: the best file (prediction_best, 26 October) scored 0.7455; the encode
 
 | file | cells | size | first line |
 |---|---|---|---|
-| `p4__gpt2__gpt2-pred-phase4.ipynb` | 11 | 33 KB | # CS781 Phase 4 (CJPE) — predictions with the NEW GPT-2 model (decoder-only Phase 1 model) **Task:** predict each Indian Supreme Court case' |
-| `p4__gpt2+modernbert+t5+bilstm__didnt_submit_fullrun.ipynb` | 15 | 77 KB | # CS781 Phase 4 (CJPE) — BEST RUNS ONLY: GPT-2, ModernBERT (encoder), T5 Extracted from the v3 notebook: the shared code is the same cells ( |
+| `00_BEST__p4__gpt2__gpt2-pred-phase4.ipynb` | 11 | 33 KB | # CS781 Phase 4 (CJPE) — predictions with the NEW GPT-2 model (decoder-only Phase 1 model) **Task:** predict each Indian Supreme Court case' |
+| `00_BEST__p4__gpt2+modernbert+t5+bilstm__didnt_submit_fullrun.ipynb` | 15 | 77 KB | # CS781 Phase 4 (CJPE) — BEST RUNS ONLY: GPT-2, ModernBERT (encoder), T5 Extracted from the v3 notebook: the shared code is the same cells ( |
 | `p4__gpt2__final-arch.ipynb` | 21 | 43 KB | # ============================================================ # CS781 PHASE 1 — RETNET ARCHITECTURE IMPLEMENTATION # ====================== |
 | `p4__gpt2+modernbert+t5+bilstm__cjpe_v3_required_techniques__3393974db1_c01.ipynb` | 21 | 83 KB | # CS781 Phase 4 (CJPE) — v3: the REQUIRED techniques (full, partial, LoRA, LoRMA, IA3, knowledge distillation) across all four Phase 1 archi |
 | `p4__gpt2+modernbert+t5+bilstm__cjpe_v3_required_techniques__3393974db1_c00.ipynb` | 19 | 72 KB | # CS781 Phase 4 (CJPE) — v3: the REQUIRED techniques (full, partial, LoRA, LoRMA, IA3, knowledge distillation) across all four Phase 1 archi |

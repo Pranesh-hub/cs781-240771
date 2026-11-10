@@ -29,10 +29,10 @@ Other Phase 1 architectures (Mamba, RWKV, RetNet) and architecture-comparison no
 
 ## 6_multi_architecture_pipelines
 Pipelines that train or compare several architectures in one notebook
-**Best:** `p5__gpt2+modernbert+t5+bilstm__lsi_part3_better_predictions__cs781_phase5.ipynb`
+**Best:** `00_BEST__p5__gpt2+modernbert+t5+bilstm__lsi_part3_better_predictions__cs781_phase5.ipynb`
 
 * `p5__gpt2+modernbert+t5+bilstm__lsi_part2_experiments_e4_e5__cs781_phase5.ipynb`
-* `p5__gpt2+modernbert+t5+bilstm__lsi_part3_better_predictions__cs781_phase5.ipynb`
+* `00_BEST__p5__gpt2+modernbert+t5+bilstm__lsi_part3_better_predictions__cs781_phase5.ipynb`
 * `p5__gpt2+modernbert+t5+bilstm__lsi_part1_baselines_window_test__cs781_phase5.ipynb`
 * `p5__gpt2+modernbert+t5+bilstm__lsi_all_experiments.ipynb`
 * `p5__gpt2+modernbert+t5+bilstm__lsi_all_experiments_alt.ipynb`

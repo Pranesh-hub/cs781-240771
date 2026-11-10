@@ -1,6 +1,6 @@
 # Phase 3: 1_gpt2_decoder
 
-**Best notebook: `p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c00.ipynb`**, the notebook behind the best Phase 3 submission (macro-F1 0.3922, rank 127). It is identical in code to `phase3_rhetorical_roles/Phase3_Rhetorical_Roles.ipynb`.
+**Best notebook: `00_BEST__p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c00.ipynb`**, the notebook behind the best Phase 3 submission (macro-F1 0.3922, rank 127). It is identical in code to `phase3_rhetorical_roles/Phase3_Rhetorical_Roles.ipynb`.
 
 The `rr_*__6d390d6f69_cNN` files are Kaggle versions of the same notebook (durable publishing, rolling checkpoints, training pipeline); the `cs781_phase3_*` files are the first starters and fixes.
 
@@ -25,7 +25,7 @@ The `rr_*__6d390d6f69_cNN` files are Kaggle versions of the same notebook (durab
 * `p3__gpt2__rr_durable_recovery_publishing__6d390d6f69_c13.ipynb`
 * `p3__gpt2__rr_durable_recovery_publishing__6d390d6f69_c14.ipynb`
 * `p3__gpt2__rr_pipeline.ipynb`
-* **`p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c00.ipynb`** (best)
+* **`00_BEST__p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c00.ipynb`** (best)
 * `p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c18.ipynb`
 * `p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c21.ipynb`
 * `p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c22.ipynb`
