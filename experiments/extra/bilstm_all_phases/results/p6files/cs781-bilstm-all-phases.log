@@ -1,0 +1,588 @@
+[{"stream_name":"stderr","time":7.758904028,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.758954299,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.758958801,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.758961365,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.366319122,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.366353519,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.366358706,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.366362731,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.491252104,"data":"planned training minutes: {2: 25, 3: 0, 4: 25, 5: 25, 6: 30, 7: 20} | hard stops: {2: 70, 3: 60, 4: 90, 5: 90, 6: 100, 7: 70}\n"}
+,{"stream_name":"stdout","time":9.565476526,"data":"{'2': 7, '3': 11, '4': 9, '5': 12, '6': 13, '7': 17} cells per phase\n"}
+,{"stream_name":"stdout","time":9.593876359,"data":"\n"}
+,{"stream_name":"stdout","time":9.593916562,"data":"######## PHASE 2  (notebook time so far 0 min) ########\n"}
+,{"stream_name":"stdout","time":9.694231894,"data":"\n"}
+,{"stream_name":"stdout","time":9.694252753,"data":"===== phase 2, cell 0 =====\n"}
+,{"stream_name":"stdout","time":9.694256903,"data":"\n"}
+,{"stream_name":"stdout","time":9.694260235,"data":"===== phase 2, cell 1 =====\n"}
+,{"stream_name":"stdout","time":17.264315395,"data":"device: cuda | SELFTEST: False | training cap (min): 25\n"}
+,{"stream_name":"stdout","time":17.264349007,"data":"\n"}
+,{"stream_name":"stdout","time":17.264353768,"data":"===== phase 2, cell 2 =====\n"}
+,{"stream_name":"stdout","time":18.601325133,"data":"\n"}
+,{"stream_name":"stdout","time":18.60135597,"data":"Fetching 6 files:   0%|          | 0/6 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":18.921246263,"data":"Fetching 6 files:  17%|█▋        | 1/6 [00:00\u003c00:00,  6.97it/s]\n"}
+,{"stream_name":"stdout","time":18.921294663,"data":"Fetching 6 files:  67%|██████▋   | 4/6 [00:00\u003c00:00, 13.37it/s]\n"}
+,{"stream_name":"stdout","time":18.921301332,"data":"Fetching 6 files: 100%|██████████| 6/6 [00:00\u003c00:00, 15.15it/s]\n"}
+,{"stream_name":"stdout","time":18.921305613,"data":"Fetching 6 files: 100%|██████████| 6/6 [00:00\u003c00:00, 13.97it/s]\n"}
+,{"stream_name":"stdout","time":41.156341665,"data":"CELL FAILED: FileNotFoundError [Errno 2] No such file or directory: '/kaggle/working/phase2_bilstm/hf/Phase_2_LNER/Train/fold3-text.json'\n"}
+,{"stream_name":"stdout","time":41.156370352,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":41.156375733,"data":"  File \"/kaggle/working/children/phase2_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":41.156380372,"data":"    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":41.15638431,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":41.156387858,"data":"  File \"phase2_cell2\", line 46, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":41.156392143,"data":"  File \"phase2_cell2\", line 45, in jl\n"}
+,{"stream_name":"stdout","time":41.156406325,"data":"FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/phase2_bilstm/hf/Phase_2_LNER/Train/fold3-text.json'\n"}
+,{"stream_name":"stdout","time":41.156410082,"data":"\n"}
+,{"stream_name":"stdout","time":41.156413245,"data":"===== phase 2, cell 3 =====\n"}
+,{"stream_name":"stdout","time":41.156418019,"data":"CELL FAILED: NameError name 'train_texts' is not defined\n"}
+,{"stream_name":"stdout","time":41.156425609,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":41.156428478,"data":"  File \"/kaggle/working/children/phase2_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":41.156430985,"data":"    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":41.156433188,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":41.156435401,"data":"  File \"phase2_cell3\", line 17, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":41.156437757,"data":"NameError: name 'train_texts' is not defined\n"}
+,{"stream_name":"stdout","time":41.156440001,"data":"\n"}
+,{"stream_name":"stdout","time":41.156442128,"data":"===== phase 2, cell 4 =====\n"}
+,{"stream_name":"stdout","time":45.863244829,"data":"BiLSTM tagger: feature dim 2048 | trainable 34.72M of 63.71M\n"}
+,{"stream_name":"stdout","time":45.8632992,"data":"CELL FAILED: NameError name 'CLS_W' is not defined\n"}
+,{"stream_name":"stdout","time":45.863305708,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":45.86331593,"data":"  File \"/kaggle/working/children/phase2_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":45.86332077,"data":"    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":45.863323658,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":45.8633271,"data":"  File \"phase2_cell4\", line 15, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":45.863345728,"data":"NameError: name 'CLS_W' is not defined\n"}
+,{"stream_name":"stdout","time":45.863350355,"data":"\n"}
+,{"stream_name":"stdout","time":45.863354168,"data":"===== phase 2, cell 5 =====\n"}
+,{"stream_name":"stdout","time":45.863359336,"data":"CELL FAILED: NameError name 'train_texts' is not defined\n"}
+,{"stream_name":"stdout","time":45.863363976,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":45.863367921,"data":"  File \"/kaggle/working/children/phase2_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":45.863371887,"data":"    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":45.863376188,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":45.863381976,"data":"  File \"phase2_cell5\", line 52, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":45.86338644,"data":"NameError: name 'train_texts' is not defined\n"}
+,{"stream_name":"stdout","time":45.863390288,"data":"\n"}
+,{"stream_name":"stdout","time":45.863394568,"data":"===== phase 2, cell 6 =====\n"}
+,{"stream_name":"stdout","time":45.863398597,"data":"CELL FAILED: NameError name 'test_texts' is not defined\n"}
+,{"stream_name":"stdout","time":45.863403055,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":45.86340728,"data":"  File \"/kaggle/working/children/phase2_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":45.863411836,"data":"    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":45.8634327,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":45.863436785,"data":"  File \"phase2_cell6\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":45.863440398,"data":"NameError: name 'test_texts' is not defined\n"}
+,{"stream_name":"stdout","time":49.692606533,"data":"\n"}
+,{"stream_name":"stdout","time":49.692634747,"data":"######## PHASE 3  (notebook time so far 1 min) ########\n"}
+,{"stream_name":"stdout","time":49.897200919,"data":"\n"}
+,{"stream_name":"stdout","time":49.897256139,"data":"===== phase 3, cell 0 =====\n"}
+,{"stream_name":"stdout","time":49.897260874,"data":"\n"}
+,{"stream_name":"stdout","time":49.897264142,"data":"===== phase 3, cell 1 =====\n"}
+,{"stream_name":"stdout","time":52.115415865,"data":"device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":52.3695764,"data":"not found locally: ['CL_train.json', 'CL_dev.json', 'CL_test.json', 'IT_train.json', 'IT_dev.json', 'IT_test.json', 'label_vocab.json'] -\u003e downloading from Hugging Face (gated dataset)\n"}
+,{"stream_name":"stdout","time":52.85429539,"data":"\n"}
+,{"stream_name":"stdout","time":52.854320635,"data":"Fetching 7 files:   0%|          | 0/7 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":53.116683074,"data":"Fetching 7 files:  14%|█▍        | 1/7 [00:00\u003c00:00,  8.01it/s]\n"}
+,{"stream_name":"stdout","time":53.11671144,"data":"Fetching 7 files:  29%|██▊       | 2/7 [00:00\u003c00:00,  7.57it/s]\n"}
+,{"stream_name":"stdout","time":53.116716529,"data":"Fetching 7 files: 100%|██████████| 7/7 [00:00\u003c00:00, 21.11it/s]\n"}
+,{"stream_name":"stdout","time":53.116720186,"data":"CL_train.json      /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/CL_train.json\n"}
+,{"stream_name":"stdout","time":53.116723638,"data":"CL_dev.json        /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/CL_dev.json\n"}
+,{"stream_name":"stdout","time":53.116727253,"data":"CL_test.json       /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Test/CL_test.json\n"}
+,{"stream_name":"stdout","time":53.116731098,"data":"IT_train.json      /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/IT_train.json\n"}
+,{"stream_name":"stdout","time":53.116734769,"data":"IT_dev.json        /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/IT_dev.json\n"}
+,{"stream_name":"stdout","time":53.116738771,"data":"IT_test.json       /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Test/IT_test.json\n"}
+,{"stream_name":"stdout","time":53.116743296,"data":"label_vocab.json   /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/label_vocab.json\n"}
+,{"stream_name":"stdout","time":53.116747201,"data":"\n"}
+,{"stream_name":"stdout","time":53.116750828,"data":"===== phase 3, cell 2 =====\n"}
+,{"stream_name":"stdout","time":53.116754663,"data":"label_vocab: ['Fact', 'Issue', 'ArgumentPetitioner', 'ArgumentRespondent', 'Statute', 'Dissent', 'PrecedentReliedUpon', 'PrecedentNotReliedUpon', 'PrecedentOverruled', 'RulingByLowerCourt', 'RatioOfTheDecision', 'RulingByPresentCourt', 'None'] | n = 13\n"}
+,{"stream_name":"stdout","time":53.116759931,"data":"\n"}
+,{"stream_name":"stdout","time":53.116762969,"data":"--- schema of CL_train.json (first doc) ---\n"}
+,{"stream_name":"stdout","time":53.116766059,"data":"list(40)\n"}
+,{"stream_name":"stdout","time":53.116769116,"data":" [0] -\u003e\n"}
+,{"stream_name":"stdout","time":53.116772245,"data":"    dict(3) keys=['id', 'text', 'labels']\n"}
+,{"stream_name":"stdout","time":53.116775449,"data":"     ['id'] -\u003e\n"}
+,{"stream_name":"stdout","time":53.11677882,"data":"        str: 'CCI_All_India_Distillers_Association_vs_Haldyn_Glass_GCO100028COM855733'\n"}
+,{"stream_name":"stdout","time":53.116792973,"data":"     ['text'] -\u003e\n"}
+,{"stream_name":"stdout","time":53.116798703,"data":"        list(43)\n"}
+,{"stream_name":"stdout","time":53.116801953,"data":"         [0] -\u003e\n"}
+,{"stream_name":"stdout","time":53.11680544,"data":"            str: 'Consequent upon the repeal of the MRTP Act this complaint has been received by transfer on 04.03.201'\n"}
+,{"stream_name":"stdout","time":53.116808739,"data":"\n"}
+,{"stream_name":"stdout","time":53.116811712,"data":"--- schema of CL_test.json (first doc) ---\n"}
+,{"stream_name":"stdout","time":53.116815419,"data":"dict(5) keys=['HC_Raghupati_Singhania__vs__Competition_Commission_ofDE201616051616063761COM513489', 'COM_TPM_Consultants_Pvt_Ltd_vs_Competition_Commission_TA2016110716153210127COM903224', 'SC_Ultra Tech Cement Ltd vs Competition Commission of India and Ors 12062013 SC', 'CCI_Ms_Mineral_Enterprises_Limited_vs_Ministry_of_RailCO120089COM803307', 'HC_Vodafone_India_Limited_and_Ors_vs_The_Competition_MH2017051017164746274COM906883']\n"}
+,{"stream_name":"stdout","time":53.116820058,"data":" ['HC_Raghupati_Singhania__vs__Competition_Commission_ofDE201616051616063761COM513489'] -\u003e\n"}
+,{"stream_name":"stdout","time":53.116823976,"data":"    list(18)\n"}
+,{"stream_name":"stdout","time":53.116828421,"data":"     [0] -\u003e\n"}
+,{"stream_name":"stdout","time":53.116831693,"data":"        str: 'Manmohan, J. 1 .'\n"}
+,{"stream_name":"stdout","time":53.116835068,"data":" ['COM_TPM_Consultants_Pvt_Ltd_vs_Competition_Commission_TA2016110716153210127COM903224'] -\u003e\n"}
+,{"stream_name":"stdout","time":53.116838759,"data":"    list(230)\n"}
+,{"stream_name":"stdout","time":53.116842018,"data":"     [0] -\u003e\n"}
+,{"stream_name":"stdout","time":53.116845636,"data":"        str: 'This appeal is directed against order dated 05.04.2016 passed by the Competition Commission of India'\n"}
+,{"stream_name":"stdout","time":53.116849349,"data":"CELL FAILED: ValueError could not locate the sentence list inside a document\n"}
+,{"stream_name":"stdout","time":53.116852889,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":53.116856276,"data":"  File \"/kaggle/working/children/phase3_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":53.116860054,"data":"    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":53.11686355,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":53.116867013,"data":"  File \"phase3_cell2\", line 150, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":53.116870728,"data":"  File \"phase3_cell2\", line 105, in parse_split\n"}
+,{"stream_name":"stdout","time":53.116874294,"data":"  File \"phase3_cell2\", line 50, in _extract\n"}
+,{"stream_name":"stdout","time":53.116877817,"data":"ValueError: could not locate the sentence list inside a document\n"}
+,{"stream_name":"stdout","time":53.11688134,"data":"\n"}
+,{"stream_name":"stdout","time":53.116884624,"data":"===== phase 3, cell 3 =====\n"}
+,{"stream_name":"stdout","time":53.116887975,"data":"CELL FAILED: KeyError 'legal_bpe_32k.json'\n"}
+,{"stream_name":"stdout","time":53.116891306,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":53.116894622,"data":"  File \"/kaggle/working/children/phase3_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":53.116898186,"data":"    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":53.116901769,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":53.116908942,"data":"  File \"phase3_cell3\", line 3, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":53.116912799,"data":"KeyError: 'legal_bpe_32k.json'\n"}
+,{"stream_name":"stdout","time":53.11691617,"data":"\n"}
+,{"stream_name":"stdout","time":53.116919396,"data":"===== phase 3, cell 4 =====\n"}
+,{"stream_name":"stdout","time":53.116922859,"data":"\n"}
+,{"stream_name":"stdout","time":53.116925895,"data":"===== phase 3, cell 5 =====\n"}
+,{"stream_name":"stdout","time":58.531594675,"data":"registered architectures: {}\n"}
+,{"stream_name":"stdout","time":58.531632653,"data":"\n"}
+,{"stream_name":"stdout","time":58.531636704,"data":"===== phase 3, cell 6 =====\n"}
+,{"stream_name":"stdout","time":58.531640007,"data":"\n"}
+,{"stream_name":"stdout","time":58.531643152,"data":"===== phase 3, cell 7 =====\n"}
+,{"stream_name":"stdout","time":58.531646442,"data":"registered architectures: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'}\n"}
+,{"stream_name":"stdout","time":58.531649978,"data":"\n"}
+,{"stream_name":"stdout","time":58.531652844,"data":"===== phase 3, cell 8 =====\n"}
+,{"stream_name":"stdout","time":58.531655715,"data":"CELL FAILED: KeyError 'CL'\n"}
+,{"stream_name":"stdout","time":58.531658831,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":58.531661914,"data":"  File \"/kaggle/working/children/phase3_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":58.531665736,"data":"    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":58.53166888,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":58.531671908,"data":"  File \"phase3_cell8\", line 3, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":58.531675463,"data":"  File \"phase3_cell6\", line 104, in run_experiment\n"}
+,{"stream_name":"stdout","time":58.531678707,"data":"  File \"phase3_cell6\", line 39, in run_one\n"}
+,{"stream_name":"stdout","time":58.531682241,"data":"KeyError: 'CL'\n"}
+,{"stream_name":"stdout","time":58.531685693,"data":"\n"}
+,{"stream_name":"stdout","time":58.531688692,"data":"===== phase 3, cell 9 =====\n"}
+,{"stream_name":"stdout","time":58.531691745,"data":"CELL FAILED: NameError name 'BEST' is not defined\n"}
+,{"stream_name":"stdout","time":58.531695424,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":58.53169869,"data":"  File \"/kaggle/working/children/phase3_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":58.531702124,"data":"    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":58.531705221,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":58.531708413,"data":"  File \"phase3_cell9\", line 23, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":58.531711594,"data":"NameError: name 'BEST' is not defined\n"}
+,{"stream_name":"stdout","time":58.531714932,"data":"\n"}
+,{"stream_name":"stdout","time":58.531718194,"data":"===== phase 3, cell 10 =====\n"}
+,{"stream_name":"stdout","time":58.53172125,"data":"CELL FAILED: NameError name 'BEST' is not defined\n"}
+,{"stream_name":"stdout","time":58.531724551,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":58.531727593,"data":"  File \"/kaggle/working/children/phase3_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":58.53174937,"data":"    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":58.531752563,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":58.531756042,"data":"  File \"phase3_cell10\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":58.531759222,"data":"NameError: name 'BEST' is not defined\n"}
+,{"stream_name":"stdout","time":59.320289258,"data":"\n"}
+,{"stream_name":"stdout","time":59.320317115,"data":"######## PHASE 4  (notebook time so far 1 min) ########\n"}
+,{"stream_name":"stdout","time":59.523192045,"data":"\n"}
+,{"stream_name":"stdout","time":59.523218362,"data":"===== phase 4, cell 0 =====\n"}
+,{"stream_name":"stdout","time":59.523222465,"data":"\n"}
+,{"stream_name":"stdout","time":59.523225679,"data":"===== phase 4, cell 1 =====\n"}
+,{"stream_name":"stdout","time":61.727893684,"data":"device: Tesla T4 | work dir: /kaggle/working/cjpe\n"}
+,{"stream_name":"stdout","time":61.727935071,"data":"\n"}
+,{"stream_name":"stdout","time":61.72793973,"data":"===== phase 4, cell 2 =====\n"}
+,{"stream_name":"stdout","time":62.33170803,"data":"Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)\n"}
+,{"stream_name":"stdout","time":62.331774652,"data":"Kaggle credentials  : MISSING (KAGGLE_USERNAME not found)\n"}
+,{"stream_name":"stdout","time":62.331780033,"data":"CELL FAILED: RuntimeError STOPPING EARLY (before any long step):\n"}
+,{"stream_name":"stdout","time":62.331783777,"data":"  - KAGGLE_USERNAME / KAGGLE_KEY are missing: add them as Secrets (the LEGACY API key from kaggle.com/settings \u003e API)\n"}
+,{"stream_name":"stdout","time":62.331787715,"data":"Fix: Add-ons \u003e Secrets \u003e add the missing secret(s) and switch 'Attached' ON for this notebook, then run again. (Set REQUIRE_HF / REQUIRE_KAGGLE = False at the top of this cell to continue without them.)\n"}
+,{"stream_name":"stdout","time":62.331791892,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":62.331795183,"data":"  File \"/kaggle/working/children/phase4_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":62.331800594,"data":"    try: exec(compile(src, 'phase4_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":62.33181899,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":62.331823203,"data":"  File \"phase4_cell2\", line 41, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":62.331826662,"data":"RuntimeError: STOPPING EARLY (before any long step):\n"}
+,{"stream_name":"stdout","time":62.331830672,"data":"  - KAGGLE_USERNAME / KAGGLE_KEY are missing: add them as Secrets (the LEGACY API key from kaggle.com/settings \u003e API)\n"}
+,{"stream_name":"stdout","time":62.331834779,"data":"Fix: Add-ons \u003e Secrets \u003e add the missing secret(s) and switch 'Attached' ON for this notebook, then run again. (Set REQUIRE_HF / REQUIRE_KAGGLE = False at the top of this cell to continue without them.)\n"}
+,{"stream_name":"stdout","time":62.33183881,"data":"\n"}
+,{"stream_name":"stdout","time":62.331842391,"data":"===== phase 4, cell 3 =====\n"}
+,{"stream_name":"stdout","time":62.331846248,"data":"CJPE files not found locally -\u003e downloading from Hugging Face (accept the dataset conditions on its page first)\n"}
+,{"stream_name":"stdout","time":62.331850642,"data":"trying the token from the environment variable HF_TOKEN (37 characters)\n"}
+,{"stream_name":"stdout","time":62.567599709,"data":"   accepted: user 'P-240771', access to Exploration-Lab/CS-781-Capstone OK\n"}
+,{"stream_name":"stdout","time":62.567657514,"data":"\n"}
+,{"stream_name":"stdout","time":63.819674151,"data":"Fetching 3 files:   0%|          | 0/3 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":71.245047059,"data":"Fetching 3 files:  33%|███▎      | 1/3 [00:01\u003c00:02,  1.14s/it]\n"}
+,{"stream_name":"stdout","time":71.245089396,"data":"Fetching 3 files: 100%|██████████| 3/3 [00:08\u003c00:00,  3.04s/it]\n"}
+,{"stream_name":"stdout","time":71.245094906,"data":"Fetching 3 files: 100%|██████████| 3/3 [00:08\u003c00:00,  2.85s/it]\n"}
+,{"stream_name":"stdout","time":71.245099156,"data":"{'train': '703 MiB  /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/train.json', 'dev': '43 MiB  /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/dev.json', 'test': '34 MiB  /kaggle/working/cjpe/hf/Phase_4_CJPE/Test/test.json'}\n"}
+,{"stream_name":"stdout","time":71.488262066,"data":"tokenizer: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/legal_bpe_32k_mask.json | vocabulary 32001\n"}
+,{"stream_name":"stdout","time":71.488323074,"data":"[train] reading /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/train.json ...\n"}
+,{"stream_name":"stdout","time":74.554212675,"data":"[train] 37387 cases | text field 'text' | label field 'label' | id field 'id'\n"}
+,{"stream_name":"stdout","time":247.060113693,"data":"[dev] reading /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/dev.json ...\n"}
+,{"stream_name":"stdout","time":247.323583783,"data":"[dev] 1988 cases | text field 'text' | label field 'label' | id field 'id'\n"}
+,{"stream_name":"stdout","time":258.272242568,"data":"[test] reading /kaggle/working/cjpe/hf/Phase_4_CJPE/Test/test.json ...\n"}
+,{"stream_name":"stdout","time":258.272283893,"data":"[test] 1517 cases | text field 'text' | label field 'label' | id field 'id'\n"}
+,{"stream_name":"stdout","time":266.911743223,"data":"[test] NOTE: test.json contains a label field. The task says test labels are private, so they are IGNORED here and never used for anything.\n"}
+,{"stream_name":"stdout","time":266.911798934,"data":"[train] cases  37387 | tokens p50/p90/p99: 2688/8050/23799 | label counts: {0: 22067, 1: 15320}\n"}
+,{"stream_name":"stdout","time":266.911805889,"data":"[dev] cases   1988 | tokens p50/p90/p99: 3838/9467/27424 | label counts: {0: 994, 1: 994}\n"}
+,{"stream_name":"stdout","time":266.911810762,"data":"[test] cases   1517 | tokens p50/p90/p99: 4003/9794/24749 | label counts: none (test)\n"}
+,{"stream_name":"stdout","time":266.911815686,"data":"majority-class baseline macro-F1 on dev would be about 0.333\n"}
+,{"stream_name":"stdout","time":266.911819703,"data":"\n"}
+,{"stream_name":"stdout","time":266.911824125,"data":"===== phase 4, cell 4 =====\n"}
+,{"stream_name":"stdout","time":272.438740609,"data":"Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} \n"}
+,{"stream_name":"stdout","time":272.438795414,"data":"  missing (pre-train them first): ['gpt2_new', 'modernbert', 't5']\n"}
+,{"stream_name":"stdout","time":272.438801868,"data":"\n"}
+,{"stream_name":"stdout","time":272.43880703,"data":"===== phase 4, cell 5 =====\n"}
+,{"stream_name":"stdout","time":272.438811361,"data":"\n"}
+,{"stream_name":"stdout","time":272.438816152,"data":"===== phase 4, cell 6 =====\n"}
+,{"stream_name":"stdout","time":272.438820803,"data":"\n"}
+,{"stream_name":"stdout","time":272.438824785,"data":"===== phase 4, cell 7 =====\n"}
+,{"stream_name":"stdout","time":272.438828763,"data":"new runs selected: ['P5'] | training windows 4, inference windows 8 | dev positive rate 0.500\n"}
+,{"stream_name":"stdout","time":272.438833086,"data":"\n"}
+,{"stream_name":"stdout","time":272.438856205,"data":"===== phase 4, cell 8 =====\n"}
+,{"stream_name":"stdout","time":278.509215271,"data":"[P5_bilstm_partial] bilstm | technique partial | L=512 W=4 p_tail=0.5 | 76M params, 47.27M trained (62.0%) | lr 0.0005 (head 0.001) | EMA 0.999 | 16 cases/step\n"}
+,{"stream_name":"stdout","time":278.509244446,"data":"   plan: 2337 steps = 37392 cases = 1.00 epochs | 0.32s/step -\u003e ~12 min training + ~3.8 min inference\n"}
+,{"stream_name":"stdout","time":346.525575859,"data":"   step 194/2337 | train loss 0.7192 | 1.2 min\n"}
+,{"stream_name":"stdout","time":415.071685195,"data":"   step 388/2337 | train loss 0.6962 | 2.4 min\n"}
+,{"stream_name":"stdout","time":483.621889542,"data":"   step 582/2337 | train loss 0.6946 | 3.5 min\n"}
+,{"stream_name":"stdout","time":493.501135085,"data":"   [dev subset 1500, EMA, last window] step 584: AUC 0.4963 | macro-F1 0.3348\n"}
+,{"stream_name":"stdout","time":561.331343943,"data":"   step 776/2337 | train loss 0.6937 | 4.8 min\n"}
+,{"stream_name":"stdout","time":630.057450934,"data":"   step 970/2337 | train loss 0.6933 | 6.0 min\n"}
+,{"stream_name":"stdout","time":698.742902943,"data":"   step 1164/2337 | train loss 0.6938 | 7.1 min\n"}
+,{"stream_name":"stdout","time":709.341463687,"data":"   [dev subset 1500, EMA, last window] step 1168: AUC 0.4945 | macro-F1 0.3348\n"}
+,{"stream_name":"stdout","time":776.571856032,"data":"   step 1358/2337 | train loss 0.6932 | 8.4 min\n"}
+,{"stream_name":"stdout","time":845.112799585,"data":"   step 1552/2337 | train loss 0.6933 | 9.5 min\n"}
+,{"stream_name":"stdout","time":913.779527682,"data":"   step 1746/2337 | train loss 0.6932 | 10.7 min\n"}
+,{"stream_name":"stdout","time":925.417795876,"data":"   [dev subset 1500, EMA, last window] step 1753: AUC 0.4948 | macro-F1 0.3348\n"}
+,{"stream_name":"stdout","time":991.624530065,"data":"   step 1940/2337 | train loss 0.6934 | 12.0 min\n"}
+,{"stream_name":"stdout","time":1060.451372972,"data":"   step 2134/2337 | train loss 0.6931 | 13.1 min\n"}
+,{"stream_name":"stdout","time":1129.265256978,"data":"   step 2328/2337 | train loss 0.6933 | 14.3 min\n"}
+,{"stream_name":"stdout","time":1141.663762667,"data":"   [dev subset 1500, EMA, last window] step 2337: AUC 0.4985 | macro-F1 0.3348\n"}
+,{"stream_name":"stdout","time":1280.204373521,"data":"[P5_bilstm_partial] DEV: AUC 0.5092 (last window only: 0.5032; chosen recency decay a=0.25) | macro-F1 rate-matched 0.5121 | tuned 0.3333 (thr 0.50) | at 0.5 0.3333 | 16.8 min\n"}
+,{"stream_name":"stdout","time":1280.20441108,"data":"   test: share predicted positive at the dev threshold = 0.000 (dev positive rate 0.500) -\u003e policy 'rate_matched' used for the submission file\n"}
+,{"stream_name":"stdout","time":1280.204415593,"data":"   saved /kaggle/working/cjpe/submissions/P5_bilstm_partial.json (1517 predictions, format validated) and the ledger row\n"}
+,{"stream_name":"stdout","time":1283.072250569,"data":"\n"}
+,{"stream_name":"stdout","time":1283.072280061,"data":"######## PHASE 5  (notebook time so far 21 min) ########\n"}
+,{"stream_name":"stdout","time":1283.276583065,"data":"\n"}
+,{"stream_name":"stdout","time":1283.276659991,"data":"===== phase 5, cell 0 =====\n"}
+,{"stream_name":"stdout","time":1283.276668864,"data":"\n"}
+,{"stream_name":"stdout","time":1283.276674876,"data":"===== phase 5, cell 1 =====\n"}
+,{"stream_name":"stdout","time":1283.276681033,"data":"\n"}
+,{"stream_name":"stdout","time":1283.276686257,"data":"===== phase 5, cell 2 =====\n"}
+,{"stream_name":"stdout","time":1285.572077823,"data":"device: Tesla T4 | work dir: /kaggle/working/lsi\n"}
+,{"stream_name":"stdout","time":1285.572120291,"data":"\n"}
+,{"stream_name":"stdout","time":1285.572126693,"data":"===== phase 5, cell 3 =====\n"}
+,{"stream_name":"stdout","time":1286.27494537,"data":"Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)\n"}
+,{"stream_name":"stdout","time":1286.274970945,"data":"Kaggle credentials  : not provided (the backup upload will be a dry run)\n"}
+,{"stream_name":"stdout","time":1286.27497636,"data":"\n"}
+,{"stream_name":"stdout","time":1286.274979845,"data":"Credentials ready.\n"}
+,{"stream_name":"stdout","time":1286.274983175,"data":"\n"}
+,{"stream_name":"stdout","time":1286.274986525,"data":"===== phase 5, cell 4 =====\n"}
+,{"stream_name":"stdout","time":1286.274989954,"data":"macro-F1 convention used for tuning and selection: present_in_val (macro_f1_present). All three variants are reported everywhere. The official evaluator's convention is unresolved.\n"}
+,{"stream_name":"stdout","time":1286.274995469,"data":"\n"}
+,{"stream_name":"stdout","time":1286.27501255,"data":"===== phase 5, cell 5 =====\n"}
+,{"stream_name":"stdout","time":1294.848692798,"data":"\n"}
+,{"stream_name":"stdout","time":1299.841790137,"data":"Generating train split: 0 examples [00:00, ? examples/s]\n"}
+,{"stream_name":"stdout","time":1299.841837532,"data":"Generating train split: 42750 examples [00:04, 8561.90 examples/s]\n"}
+,{"stream_name":"stdout","time":1299.841844217,"data":"Generating train split: 42750 examples [00:05, 8432.04 examples/s]\n"}
+,{"stream_name":"stdout","time":1299.84184865,"data":"\n"}
+,{"stream_name":"stdout","time":1300.701769051,"data":"Generating validation split: 0 examples [00:00, ? examples/s]\n"}
+,{"stream_name":"stdout","time":1300.701811802,"data":"Generating validation split: 10181 examples [00:00, 13017.95 examples/s]\n"}
+,{"stream_name":"stdout","time":1300.70181828,"data":"Generating validation split: 10181 examples [00:00, 12803.72 examples/s]\n"}
+,{"stream_name":"stdout","time":1300.701822287,"data":"\n"}
+,{"stream_name":"stdout","time":1301.699669071,"data":"Generating test split: 0 examples [00:00, ? examples/s]\n"}
+,{"stream_name":"stdout","time":1301.699718286,"data":"Generating test split: 13019 examples [00:00, 13297.81 examples/s]\n"}
+,{"stream_name":"stdout","time":1301.6997242,"data":"Generating test split: 13019 examples [00:00, 13146.01 examples/s]\n"}
+,{"stream_name":"stdout","time":1301.699728659,"data":"{'train': 42750, 'dev': 10181, 'test': 13019} cases per split\n"}
+,{"stream_name":"stdout","time":1305.609299954,"data":"[test] NOTE: the test split has a label field. Test labels are private, so it is IGNORED and never used.\n"}
+,{"stream_name":"stdout","time":1305.609334703,"data":"\n"}
+,{"stream_name":"stdout","time":1305.609340371,"data":"=== LABEL UNIVERSE: 100 statutes (ids 0..99) = train ∪ validation | 100 occur in train, 100 in validation ===\n"}
+,{"stream_name":"stdout","time":1305.609345436,"data":"statutes seen ONLY in validation (cannot be learned from train): 0 [] | statutes seen only in train: 0\n"}
+,{"stream_name":"stdout","time":1305.609349271,"data":"labels per case: train mean 3.70 / median 3 / p90 7 / max 31 | validation mean 3.92 | cases with no label: train 0.00%, validation 0.00%\n"}
+,{"stream_name":"stdout","time":1305.609353709,"data":"train support per statute: min 272 / median 679 / max 11730 | statutes with \u003c 5 training cases: 0 | with \u003c 20: 0\n"}
+,{"stream_name":"stdout","time":1305.609358071,"data":"most / least frequent statutes in train:\n"}
+,{"stream_name":"stdout","time":1305.824961053,"data":" statute  train  validation\n"}
+,{"stream_name":"stdout","time":1305.825001272,"data":"       5  11730        2936\n"}
+,{"stream_name":"stdout","time":1305.825008281,"data":"      34  10380        2596\n"}
+,{"stream_name":"stdout","time":1305.82503081,"data":"      97   7880        1970\n"}
+,{"stream_name":"stdout","time":1305.825035432,"data":"      43   7728        1932\n"}
+,{"stream_name":"stdout","time":1305.825039345,"data":"      39   7120        1779\n"}
+,{"stream_name":"stdout","time":1305.825043347,"data":"      12   4324        1086\n"}
+,{"stream_name":"stdout","time":1305.825047256,"data":"      13   4136        1033\n"}
+,{"stream_name":"stdout","time":1305.825051205,"data":"      10   4134        1033\n"}
+,{"stream_name":"stdout","time":1305.825055169,"data":"      66    309          78\n"}
+,{"stream_name":"stdout","time":1305.825058847,"data":"      92    309          77\n"}
+,{"stream_name":"stdout","time":1305.825062668,"data":"      23    304          80\n"}
+,{"stream_name":"stdout","time":1305.825066295,"data":"      25    287          72\n"}
+,{"stream_name":"stdout","time":1305.825070062,"data":"      84    272          68\n"}
+,{"stream_name":"stdout","time":1308.470210943,"data":"most frequent statute pairs in one case (statute, statute, cases): [(5, 34, 3644), (12, 13, 3511), (43, 97, 3385), (5, 43, 3271), (13, 14, 2831)]\n"}
+,{"stream_name":"stdout","time":1308.470241427,"data":"\n"}
+,{"stream_name":"stdout","time":1308.470401344,"data":"=== DOCUMENT LENGTH (words, split on spaces) ===\n"}
+,{"stream_name":"stdout","time":1308.470409947,"data":"split  cases  p50  p90  p99    max \u003e512 \u003e2048 \u003e4096\n"}
+,{"stream_name":"stdout","time":1308.470414509,"data":"train  42750  430 2766 8142  86858  46%   16%    5%\n"}
+,{"stream_name":"stdout","time":1308.47041834,"data":"  dev  10181  543 2957 8855  69230  52%   18%    5%\n"}
+,{"stream_name":"stdout","time":1308.470422178,"data":" test  13019  532 2811 8306 134848  51%   17%    5%\n"}
+,{"stream_name":"stdout","time":1308.97293584,"data":"Spearman correlation between document length and the number of statutes of a case (train): 0.053\n"}
+,{"stream_name":"stdout","time":1310.283802411,"data":"saved /kaggle/working/lsi/data_overview.png\n"}
+,{"stream_name":"stdout","time":1310.283841413,"data":"\n"}
+,{"stream_name":"stdout","time":1310.283845458,"data":"===== phase 5, cell 6 =====\n"}
+,{"stream_name":"stdout","time":1310.283849148,"data":"tokenizer: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/legal_bpe_32k_mask.json | vocabulary 32001\n"}
+,{"stream_name":"stdout","time":1382.324580931,"data":"[train] tokenised 42750 cases in 72s\n"}
+,{"stream_name":"stdout","time":1401.075369752,"data":"[dev] tokenised 10181 cases in 19s\n"}
+,{"stream_name":"stdout","time":1424.282639096,"data":"[test] tokenised 13019 cases in 23s\n"}
+,{"stream_name":"stdout","time":1424.282675766,"data":"\n"}
+,{"stream_name":"stdout","time":1424.282682242,"data":"DOCUMENT LENGTH IN TOKENS (of the kept text; very long documents were trimmed to both ends before tokenising):\n"}
+,{"stream_name":"stdout","time":1424.282687781,"data":"split  p50  p90   p99 \u003e512 \u003e2048 \u003e4096 \u003e8192\n"}
+,{"stream_name":"stdout","time":1424.282692544,"data":"train  621 4037 11907  56%   24%   10%    2%\n"}
+,{"stream_name":"stdout","time":1424.282696813,"data":"  dev  781 4354 13084  61%   28%   11%    3%\n"}
+,{"stream_name":"stdout","time":1424.282700828,"data":" test  772 4156 12806  61%   27%   10%    3%\n"}
+,{"stream_name":"stdout","time":1424.282704939,"data":"\n"}
+,{"stream_name":"stdout","time":1424.282708831,"data":"===== phase 5, cell 7 =====\n"}
+,{"stream_name":"stdout","time":1429.26089951,"data":"Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} \n"}
+,{"stream_name":"stdout","time":1429.260958942,"data":"  missing (pre-train them first): ['gpt2_new', 'modernbert', 't5']\n"}
+,{"stream_name":"stdout","time":1429.260978376,"data":"\n"}
+,{"stream_name":"stdout","time":1429.26098238,"data":"===== phase 5, cell 8 =====\n"}
+,{"stream_name":"stdout","time":1429.260986483,"data":"\n"}
+,{"stream_name":"stdout","time":1429.260990447,"data":"===== phase 5, cell 9 =====\n"}
+,{"stream_name":"stdout","time":1429.260994369,"data":"\n"}
+,{"stream_name":"stdout","time":1429.260997966,"data":"===== phase 5, cell 10 =====\n"}
+,{"stream_name":"stdout","time":1429.261002173,"data":"window order both | 4 windows of 512 tokens | chance-level macro AP 0.039\n"}
+,{"stream_name":"stdout","time":1429.261006034,"data":"\n"}
+,{"stream_name":"stdout","time":1429.26100935,"data":"===== phase 5, cell 11 =====\n"}
+,{"stream_name":"stdout","time":1432.855372898,"data":"[E4_bilstm_partial] bilstm | technique partial | L=512 W=4 order=both loss=bce | 68M params, 39.07M trained (57.4%) | lr 0.0005 (head 0.001) | 16 cases/step\n"}
+,{"stream_name":"stdout","time":1432.855418364,"data":"   plan: 2356 steps = 37696 cases = 0.88 epochs | 0.32s/step -\u003e ~12 min training + ~10.6 min inference\n"}
+,{"stream_name":"stdout","time":1500.686419317,"data":"   step 196/2356 | train loss 0.2039 | 1.2 min\n"}
+,{"stream_name":"stdout","time":1568.638985897,"data":"   step 392/2356 | train loss 0.1396 | 2.3 min\n"}
+,{"stream_name":"stdout","time":1636.93933982,"data":"   step 588/2356 | train loss 0.1375 | 3.5 min\n"}
+,{"stream_name":"stdout","time":1642.374584172,"data":"   [dev subset 1000, EMA, first window] step 589: macro AP 0.0646\n"}
+,{"stream_name":"stdout","time":1710.483708456,"data":"   step 784/2356 | train loss 0.1367 | 4.7 min\n"}
+,{"stream_name":"stdout","time":1778.891058544,"data":"   step 980/2356 | train loss 0.1359 | 5.8 min\n"}
+,{"stream_name":"stdout","time":1847.371353296,"data":"   step 1176/2356 | train loss 0.1311 | 7.0 min\n"}
+,{"stream_name":"stdout","time":1853.1528609,"data":"   [dev subset 1000, EMA, first window] step 1178: macro AP 0.0811\n"}
+,{"stream_name":"stdout","time":1921.011260859,"data":"   step 1372/2356 | train loss 0.1328 | 8.2 min\n"}
+,{"stream_name":"stdout","time":1989.697134925,"data":"   step 1568/2356 | train loss 0.1311 | 9.3 min\n"}
+,{"stream_name":"stdout","time":2058.451546379,"data":"   step 1764/2356 | train loss 0.1305 | 10.5 min\n"}
+,{"stream_name":"stdout","time":2064.618301215,"data":"   [dev subset 1000, EMA, first window] step 1767: macro AP 0.0959\n"}
+,{"stream_name":"stdout","time":2132.258117535,"data":"   step 1960/2356 | train loss 0.1307 | 11.7 min\n"}
+,{"stream_name":"stdout","time":2201.018480604,"data":"   step 2156/2356 | train loss 0.1270 | 12.9 min\n"}
+,{"stream_name":"stdout","time":2269.798133457,"data":"   step 2352/2356 | train loss 0.1251 | 14.0 min\n"}
+,{"stream_name":"stdout","time":2276.303110751,"data":"   [dev subset 1000, EMA, first window] step 2356: macro AP 0.1109\n"}
+,{"stream_name":"stdout","time":2659.726048935,"data":"[E4_bilstm_partial] DEV: macro-F1 [present_in_val] 0.1145 (policy per_label; all policies {\"global_top1\": 0.1002, \"card_matched\": 0.0674, \"per_label\": 0.1145}) | present-in-val 0.1150 | universe 0.1150 (zd1 0.1150) | micro-F1 0.2656 | subset acc 0.0000 | macro AP 0.0997 (first window only 0.0977; aggregation 'max') | 20.5 min\n"}
+,{"stream_name":"stdout","time":2659.726111797,"data":"   labels per case: dev true 3.92, dev predicted 12.82, test predicted 12.55 | TF-IDF baseline macro-F1 nan\n"}
+,{"stream_name":"stdout","time":2660.075326169,"data":"   saved /kaggle/working/lsi/submissions/E4_bilstm_partial.json (13019 cases, format validated) and the ledger row\n"}
+,{"stream_name":"stdout","time":2661.805805661,"data":"\n"}
+,{"stream_name":"stdout","time":2661.805855172,"data":"######## PHASE 6  (notebook time so far 44 min) ########\n"}
+,{"stream_name":"stdout","time":2662.011295004,"data":"\n"}
+,{"stream_name":"stdout","time":2662.011334963,"data":"===== phase 6, cell 0 =====\n"}
+,{"stream_name":"stdout","time":2662.011341533,"data":"\n"}
+,{"stream_name":"stdout","time":2662.01134581,"data":"===== phase 6, cell 1 =====\n"}
+,{"stream_name":"stdout","time":2662.011349884,"data":"\n"}
+,{"stream_name":"stdout","time":2662.011353636,"data":"===== phase 6, cell 2 =====\n"}
+,{"stream_name":"stdout","time":2672.670259462,"data":"device: Tesla T4 | torch 2.11.0+cu130 | transformers 5.20.2 | rouge_score lib: True | bert_score lib: True | work dir: /kaggle/working/p6\n"}
+,{"stream_name":"stdout","time":2672.670301209,"data":"\n"}
+,{"stream_name":"stdout","time":2672.670306976,"data":"===== phase 6, cell 3 =====\n"}
+,{"stream_name":"stdout","time":2673.011436637,"data":"Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)\n"}
+,{"stream_name":"stdout","time":2673.01147888,"data":"Kaggle credentials  : not provided (the backup upload will be a dry run)\n"}
+,{"stream_name":"stdout","time":2673.011484602,"data":"\n"}
+,{"stream_name":"stdout","time":2673.011488379,"data":"Credentials ready.\n"}
+,{"stream_name":"stdout","time":2673.011492076,"data":"\n"}
+,{"stream_name":"stdout","time":2673.011495409,"data":"===== phase 6, cell 4 =====\n"}
+,{"stream_name":"stdout","time":2673.011499204,"data":"ROUGE implementation: rouge_score (Porter stemming on) | BERTScore: library default for en (not necessarily the official setting)\n"}
+,{"stream_name":"stdout","time":2673.011503308,"data":"\n"}
+,{"stream_name":"stdout","time":2673.011518495,"data":"===== phase 6, cell 5 =====\n"}
+,{"stream_name":"stdout","time":2677.545079938,"data":"\n"}
+,{"stream_name":"stdout","time":2680.605308002,"data":"Generating train split: 0 examples [00:00, ? examples/s]\n"}
+,{"stream_name":"stdout","time":2680.605358015,"data":"Generating train split: 7030 examples [00:03, 2296.93 examples/s]\n"}
+,{"stream_name":"stdout","time":2680.6053639,"data":"Generating train split: 7030 examples [00:03, 2267.13 examples/s]\n"}
+,{"stream_name":"stdout","time":2680.605367628,"data":"\n"}
+,{"stream_name":"stdout","time":2680.605371234,"data":"Generating test split: 0 examples [00:00, ? examples/s]\n"}
+,{"stream_name":"stdout","time":2680.605374884,"data":"Generating test split: 100 examples [00:00, 4034.11 examples/s]\n"}
+,{"stream_name":"stdout","time":2680.605378869,"data":"Hugging Face splits found: {'train': 7030, 'test': 100}\n"}
+,{"stream_name":"stdout","time":2680.9206084,"data":"\n"}
+,{"stream_name":"stdout","time":2680.920641837,"data":"SCHEMA: train keys ['document', 'id', 'summary'] | test keys ['document', 'id', 'summary']\n"}
+,{"stream_name":"stdout","time":2680.920646984,"data":"  using id='id', document='document', summary='summary' (train) | id='id', document='document' (test)\n"}
+,{"stream_name":"stdout","time":2680.920651229,"data":"[test] NOTE: the test records contain a 'summary' field. Test references are private, so it is IGNORED and never read.\n"}
+,{"stream_name":"stdout","time":2681.199409667,"data":"\n"}
+,{"stream_name":"stdout","time":2681.199437775,"data":"ROWS: train 7030 | test 100\n"}
+,{"stream_name":"stdout","time":2681.199443488,"data":"MISSING / EMPTY: {'train_empty_doc': 0, 'train_empty_summary': 2, 'test_empty_doc': 0, 'train_missing_id': 0, 'test_missing_id': 0}\n"}
+,{"stream_name":"stdout","time":2681.199449492,"data":"DUPLICATES: train ids 0 [] | test ids 0 [] | identical train documents 27 | test documents identical to a train document 0\n"}
+,{"stream_name":"stdout","time":2681.1994655,"data":"dropping 2 training records with an empty document or summary\n"}
+,{"stream_name":"stdout","time":2681.482209884,"data":"\n"}
+,{"stream_name":"stdout","time":2681.482244488,"data":"HELD-OUT VALIDATION SPLIT (made from train; references kept apart from training): train 6325 | validation 703 (fraction 0.1, min 100, max 1000, seed 781) | scored subset: 400 documents, signature 06b37822b7 (identical in every notebook)\n"}
+,{"stream_name":"stdout","time":2683.233933037,"data":"\n"}
+,{"stream_name":"stdout","time":2683.233965079,"data":"LENGTHS IN WORDS:\n"}
+,{"stream_name":"stdout","time":2683.233970248,"data":"                what    n  mean  p10  p50  p90    max\n"}
+,{"stream_name":"stdout","time":2683.233974332,"data":"     train documents 6325  4343 1350 3138 7849  90410\n"}
+,{"stream_name":"stdout","time":2683.233978087,"data":"validation documents  703  4603 1339 3073 7855 139645\n"}
+,{"stream_name":"stdout","time":2683.233981734,"data":"      test documents  100  4782 1503 3171 8562  39695\n"}
+,{"stream_name":"stdout","time":2683.233985315,"data":"     train summaries 6325   836  294  641 1497  17654\n"}
+,{"stream_name":"stdout","time":2683.233988949,"data":"validation summaries  703   871  280  601 1512  27768\n"}
+,{"stream_name":"stdout","time":2684.804494428,"data":"summary / document length ratio (train): median 0.217, p10 0.092, p90 0.397\n"}
+,{"stream_name":"stdout","time":2686.152761236,"data":"share of summary word types NOT in the document (abstractiveness, first 500 train pairs): 0.101\n"}
+,{"stream_name":"stdout","time":2688.233122853,"data":"saved /kaggle/working/p6/data_overview.png\n"}
+,{"stream_name":"stdout","time":2688.23317892,"data":"\n"}
+,{"stream_name":"stdout","time":2688.233190303,"data":"===== phase 6, cell 6 =====\n"}
+,{"stream_name":"stdout","time":2688.233195577,"data":"tokenizer: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/legal_bpe_32k_mask.json | vocabulary 32001 | PAD=0 UNK=1 BOS=2 EOS=3 MASK=32000 | round trip OK: False -\u003e 'The appellant was convicted under Section 302 IPC on 12 . 03 . 1998 ; the appeal is dismissed .'\n"}
+,{"stream_name":"stdout","time":2782.318882109,"data":"[train] tokenised 6325 documents (1062351 sentences) in 94s\n"}
+,{"stream_name":"stdout","time":2793.20269822,"data":"[val] tokenised 703 documents (121268 sentences) in 10s\n"}
+,{"stream_name":"stdout","time":2794.686934167,"data":"[test] tokenised 100 documents (18397 sentences) in 1s\n"}
+,{"stream_name":"stdout","time":2794.686968246,"data":"\n"}
+,{"stream_name":"stdout","time":2794.687563392,"data":"LENGTHS IN TOKENS (Phase 1 tokenizer):\n"}
+,{"stream_name":"stdout","time":2794.68765214,"data":"                what  p10  p50  p75   p90   max \u003e512 \u003e1024 \u003e2048 \u003e4096\n"}
+,{"stream_name":"stdout","time":2794.687660892,"data":"     train documents 1589 3693 5837  9199 62414 100%   97%   81%   44%\n"}
+,{"stream_name":"stdout","time":2794.687666773,"data":"validation documents 1575 3620 5827  9195 61386 100%   96%   80%   43%\n"}
+,{"stream_name":"stdout","time":2794.687672265,"data":"      test documents 1773 3804 6428 10302 46028 100%   96%   84%   44%\n"}
+,{"stream_name":"stdout","time":2794.687693127,"data":"     train summaries  347  761 1150  1790 20642  74%   31%    7%    2%\n"}
+,{"stream_name":"stdout","time":2794.687700088,"data":"validation summaries  328  719 1155  1796 32718  71%   29%    8%    2%\n"}
+,{"stream_name":"stdout","time":2794.687706579,"data":"summary tokens p75 1150, p90 1790 | short/long document threshold (validation median) 3620 tokens\n"}
+,{"stream_name":"stdout","time":2794.68771284,"data":"\n"}
+,{"stream_name":"stdout","time":2794.687718094,"data":"===== phase 6, cell 7 =====\n"}
+,{"stream_name":"stdout","time":2795.53386528,"data":"Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} \n"}
+,{"stream_name":"stdout","time":2795.53390214,"data":"  missing: ['gpt2_new', 'modernbert', 't5'] \n"}
+,{"stream_name":"stdout","time":2795.533923944,"data":"  architectures that can run: ['bilstm'] | cannot run: ['gpt2', 't5', 'encdec']\n"}
+,{"stream_name":"stdout","time":2795.53392879,"data":"\n"}
+,{"stream_name":"stdout","time":2795.533932305,"data":"===== phase 6, cell 8 =====\n"}
+,{"stream_name":"stdout","time":2795.533936364,"data":"\n"}
+,{"stream_name":"stdout","time":2795.533940652,"data":"===== phase 6, cell 9 =====\n"}
+,{"stream_name":"stdout","time":2795.533945283,"data":"\n"}
+,{"stream_name":"stdout","time":2795.533949239,"data":"===== phase 6, cell 10 =====\n"}
+,{"stream_name":"stdout","time":2795.533953096,"data":"nothing to restore: no earlier part's output is attached (fine for this part)\n"}
+,{"stream_name":"stdout","time":2795.533957118,"data":"\n"}
+,{"stream_name":"stdout","time":2795.533960637,"data":"===== phase 6, cell 11 =====\n"}
+,{"stream_name":"stdout","time":2795.533964868,"data":"long-document input strategy for the experiments: 'head_tail' (DEFAULT (Part 1 study result not attached))\n"}
+,{"stream_name":"stdout","time":2795.533968944,"data":"  bilstm  budgets: input 512 tokens, summary 256 tokens\n"}
+,{"stream_name":"stdout","time":2795.53397292,"data":"\n"}
+,{"stream_name":"stdout","time":2795.533979926,"data":"===== phase 6, cell 12 =====\n"}
+,{"stream_name":"stdout","time":2799.298259676,"data":"[S7_bilstm_partial] bilstm | technique partial | strategy head_tail | input 512 + summary 256 tokens | 92.0M params, 63.01M trained (68.49%) | lr 0.0005 | fp16 autocast | 6325 training pairs\n"}
+,{"stream_name":"stdout","time":2799.298304656,"data":"   plan: 317 steps x 20 pairs = 1.00 epochs | 0.83s/step -\u003e ~4 min training (cap 30 min)\n"}
+,{"stream_name":"stdout","time":2799.72401963,"data":"phase6_cell9:168: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stdout","time":2799.724078514,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stdout","time":2826.597664613,"data":"   step 31/317 | train CE 6.5603 | 0.5 min\n"}
+,{"stream_name":"stdout","time":2854.384386712,"data":"   step 62/317 | train CE 6.2358 | 1.0 min\n"}
+,{"stream_name":"stdout","time":2871.09188836,"data":"   [validation loss, EMA weights, 64 docs] step 79: 5.6443\n"}
+,{"stream_name":"stdout","time":2883.521981319,"data":"   step 93/317 | train CE 5.8672 | 1.5 min\n"}
+,{"stream_name":"stdout","time":2911.044714705,"data":"   step 124/317 | train CE 5.7145 | 1.9 min\n"}
+,{"stream_name":"stdout","time":2938.715810275,"data":"   step 155/317 | train CE 5.5316 | 2.4 min\n"}
+,{"stream_name":"stdout","time":2942.854484263,"data":"   [validation loss, EMA weights, 64 docs] step 158: 5.4358\n"}
+,{"stream_name":"stdout","time":2967.758366965,"data":"   step 186/317 | train CE 5.4817 | 2.9 min\n"}
+,{"stream_name":"stdout","time":2995.324388537,"data":"   step 217/317 | train CE 5.4000 | 3.3 min\n"}
+,{"stream_name":"stdout","time":3015.414932753,"data":"   [validation loss, EMA weights, 64 docs] step 238: 5.3201\n"}
+,{"stream_name":"stdout","time":3024.270987072,"data":"   step 248/317 | train CE 5.3404 | 3.8 min\n"}
+,{"stream_name":"stdout","time":3051.873879996,"data":"   step 279/317 | train CE 5.2605 | 4.3 min\n"}
+,{"stream_name":"stdout","time":3079.517763246,"data":"   step 310/317 | train CE 5.2074 | 4.7 min\n"}
+,{"stream_name":"stdout","time":3087.221673968,"data":"   [validation loss, EMA weights, 64 docs] step 317: 5.2526\n"}
+,{"stream_name":"stdout","time":3090.39231632,"data":"   validation loss: raw 5.2463 | EMA 5.2526 -\u003e keeping the raw weights\n"}
+,{"stream_name":"stdout","time":3116.773022872,"data":"\n"}
+,{"stream_name":"stdout","time":3116.773078481,"data":"Loading weights:   0%|          | 0/389 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":3116.773087084,"data":"Loading weights:  62%|██████▏   | 243/389 [00:00\u003c00:00, 2424.01it/s]\n"}
+,{"stream_name":"stdout","time":3116.7730939,"data":"Loading weights: 100%|██████████| 389/389 [00:00\u003c00:00, 2472.42it/s]\n"}
+,{"stream_name":"stdout","time":3116.77309836,"data":"[transformers] \u001b[1mRobertaModel LOAD REPORT\u001b[0m from: roberta-large\n"}
+,{"stream_name":"stdout","time":3116.773103505,"data":"Key                       | Status     | \n"}
+,{"stream_name":"stdout","time":3116.773107926,"data":"--------------------------+------------+-\n"}
+,{"stream_name":"stdout","time":3116.773112109,"data":"lm_head.layer_norm.bias   | UNEXPECTED | \n"}
+,{"stream_name":"stdout","time":3116.773116042,"data":"lm_head.dense.weight      | UNEXPECTED | \n"}
+,{"stream_name":"stdout","time":3116.773120037,"data":"lm_head.bias              | UNEXPECTED | \n"}
+,{"stream_name":"stdout","time":3116.773123785,"data":"lm_head.layer_norm.weight | UNEXPECTED | \n"}
+,{"stream_name":"stdout","time":3116.773128057,"data":"lm_head.dense.bias        | UNEXPECTED | \n"}
+,{"stream_name":"stdout","time":3116.773132586,"data":"pooler.dense.bias         | MISSING    | \n"}
+,{"stream_name":"stdout","time":3116.77313707,"data":"pooler.dense.weight       | MISSING    | \n"}
+,{"stream_name":"stdout","time":3116.773141077,"data":"\n"}
+,{"stream_name":"stdout","time":3116.773145067,"data":"Notes:\n"}
+,{"stream_name":"stdout","time":3116.773149207,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":3116.773153887,"data":"- MISSING:\tthose params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":3117.267918559,"data":"BERTScore scorer: model roberta-large | layer 17 | rescale False (library default setting, NOT necessarily the official one)\n"}
+,{"stream_name":"stdout","time":3128.835827182,"data":"[S7_bilstm_partial] VALIDATION (150 docs; NOT official test scores): BERTScore F1 0.8036 | ROUGE-1 F1 0.2791 | ROUGE-L F1 0.1737 | fact coverage 0.117 | length ratio 0.37 | repetition 0.030 | unsupported 0.397 | 0.06 s/doc | empty 0\n"}
+,{"stream_name":"stdout","time":3134.923506519,"data":"   test submission /kaggle/working/p6/submissions/S7_bilstm_partial.json (100 summaries, format validated, 0.1 min, empty outputs 0)\n"}
+,{"stream_name":"stdout","time":3135.668993033,"data":"   saved runs/S7_bilstm_partial/ (result, validation summaries, per-document scores), checkpoint 350.9 MiB and the ledger row | 5.7 min in total\n"}
+,{"stream_name":"stdout","time":3137.747327413,"data":"\n"}
+,{"stream_name":"stdout","time":3137.747354558,"data":"######## PHASE 7  (notebook time so far 52 min) ########\n"}
+,{"stream_name":"stdout","time":3137.950506846,"data":"\n"}
+,{"stream_name":"stdout","time":3137.950534299,"data":"===== phase 7, cell 0 =====\n"}
+,{"stream_name":"stdout","time":3137.950539199,"data":"\n"}
+,{"stream_name":"stdout","time":3137.950543491,"data":"===== phase 7, cell 1 =====\n"}
+,{"stream_name":"stdout","time":3137.950548084,"data":"\n"}
+,{"stream_name":"stdout","time":3137.95055232,"data":"===== phase 7, cell 2 =====\n"}
+,{"stream_name":"stdout","time":3140.176305519,"data":"device: Tesla T4 | work dir: /kaggle/working/pcr_bilstm\n"}
+,{"stream_name":"stdout","time":3140.176356296,"data":"\n"}
+,{"stream_name":"stdout","time":3140.176362116,"data":"===== phase 7, cell 3 =====\n"}
+,{"stream_name":"stdout","time":3140.787708097,"data":"Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)\n"}
+,{"stream_name":"stdout","time":3140.787734754,"data":"Kaggle credentials  : not provided (the backup upload will be a dry run)\n"}
+,{"stream_name":"stdout","time":3140.787739586,"data":"\n"}
+,{"stream_name":"stdout","time":3140.787743327,"data":"Credentials ready.\n"}
+,{"stream_name":"stdout","time":3140.787746623,"data":"\n"}
+,{"stream_name":"stdout","time":3140.787749867,"data":"===== phase 7, cell 4 =====\n"}
+,{"stream_name":"stdout","time":3140.787753084,"data":"\n"}
+,{"stream_name":"stdout","time":3141.215612822,"data":"Fetching 6 files:   0%|          | 0/6 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":3141.215663181,"data":"Fetching 6 files:  17%|█▋        | 1/6 [00:00\u003c00:01,  3.62it/s]\n"}
+,{"stream_name":"stdout","time":3142.162429537,"data":"Fetching 6 files:  33%|███▎      | 2/6 [00:00\u003c00:00,  4.90it/s]\n"}
+,{"stream_name":"stdout","time":3143.973085666,"data":"Fetching 6 files:  50%|█████     | 3/6 [00:01\u003c00:01,  2.11it/s]\n"}
+,{"stream_name":"stdout","time":3145.16086437,"data":"Fetching 6 files:  67%|██████▋   | 4/6 [00:03\u003c00:02,  1.00s/it]\n"}
+,{"stream_name":"stdout","time":3148.400118022,"data":"Fetching 6 files:  83%|████████▎ | 5/6 [00:04\u003c00:01,  1.07s/it]\n"}
+,{"stream_name":"stdout","time":3148.400154043,"data":"Fetching 6 files: 100%|██████████| 6/6 [00:07\u003c00:00,  1.80s/it]\n"}
+,{"stream_name":"stdout","time":3148.400193759,"data":"Fetching 6 files: 100%|██████████| 6/6 [00:07\u003c00:00,  1.24s/it]\n"}
+,{"stream_name":"stdout","time":3152.18639494,"data":"SCHEMA (detected): {\"train\": {\"queries\": {\"id\": \"id\", \"text\": \"text\", \"labels\": \"relevant_candidates\", \"layout\": \"dict id -\u003e record\"}, \"candidates\": {\"id\": \"id\", \"text\": \"text\", \"labels\": null, \"layout\": \"dict id -\u003e record\"}}, \"dev\": {\"queries\": {\"id\": \"id\", \"text\": \"text\", \"labels\": \"relevant_candidates\", \"layout\": \"dict id -\u003e record\"}, \"candidates\": {\"id\": \"id\", \"text\": \"text\", \"labels\": null, \"layout\": \"dict id -\u003e record\"}}, \"test\": {\"queries\": {\"id\": \"id\", \"text\": \"text\", \"labels\": null, \"layout\": \"dict id -\u003e record\"}, \"candidates\": {\"id\": \"id\", \"text\": \"text\", \"labels\": null, \"layout\": \"dict id -\u003e record\"}}\n"}
+,{"stream_name":"stdout","time":3155.012620742,"data":"split  queries  candidates  query_words_p50  cand_words_p50  cand_words_p90  gold_mean  gold_p50  gold_max  no_gold  labels_not_in_pool  queries_inside_own_pool  dup_cand_ids\n"}
+,{"stream_name":"stdout","time":3155.012662482,"data":"train      827        4320             4508            3632           12422       6.42       4.0      52.0     10.0                   0                      827             0\n"}
+,{"stream_name":"stdout","time":3155.012668155,"data":"  dev      118        1023             4619            4036           16598       8.25       5.0      92.0      0.0                   0                      118             0\n"}
+,{"stream_name":"stdout","time":3155.012672763,"data":" test      237        1727             4653            3947           13490        NaN       NaN       NaN      NaN                   0                      237             0\n"}
+,{"stream_name":"stdout","time":3155.012676972,"data":"candidate-pool overlap between splits: {'train\u0026dev': 436, 'train\u0026test': 740, 'dev\u0026test': 220} | every split is retrieved ONLY from its own pool\n"}
+,{"stream_name":"stdout","time":3155.012712295,"data":"dev: a query has 8.25 relevant candidates on average; the evaluator compares the top 7 with the WHOLE gold set (micro-F1@7)\n"}
+,{"stream_name":"stdout","time":3155.012718022,"data":"\n"}
+,{"stream_name":"stdout","time":3155.012721993,"data":"===== phase 7, cell 5 =====\n"}
+,{"stream_name":"stdout","time":3251.849651896,"data":"tokenised every document in 97s | chunk 512 tokens, 12 chunks by default (24 in the sweep), vocabulary 32001\n"}
+,{"stream_name":"stdout","time":3251.84969231,"data":"split       side  tokens_p50  tokens_p90 longer_than_default_chunks longer_than_big\n"}
+,{"stream_name":"stdout","time":3251.849699764,"data":"train    queries        5731       15929                        47%             18%\n"}
+,{"stream_name":"stdout","time":3251.849705388,"data":"train candidates        4609       15631                        37%             15%\n"}
+,{"stream_name":"stdout","time":3251.849710614,"data":"  dev    queries        5703       19699                        47%             17%\n"}
+,{"stream_name":"stdout","time":3251.849716172,"data":"  dev candidates        5135       21286                        42%             17%\n"}
+,{"stream_name":"stdout","time":3251.849721814,"data":" test    queries        5895       17648                        48%             19%\n"}
+,{"stream_name":"stdout","time":3251.849726869,"data":" test candidates        4963       17543                        42%             17%\n"}
+,{"stream_name":"stdout","time":3251.849732095,"data":"\n"}
+,{"stream_name":"stdout","time":3251.849737059,"data":"===== phase 7, cell 6 =====\n"}
+,{"stream_name":"stdout","time":3257.454160566,"data":"Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} \n"}
+,{"stream_name":"stdout","time":3257.45421142,"data":"  missing (pre-train them first): ['gpt2_new', 'modernbert', 't5']\n"}
+,{"stream_name":"stdout","time":3257.454222043,"data":"\n"}
+,{"stream_name":"stdout","time":3257.454226963,"data":"===== phase 7, cell 7 =====\n"}
+,{"stream_name":"stdout","time":3257.454231551,"data":"\n"}
+,{"stream_name":"stdout","time":3257.454236098,"data":"===== phase 7, cell 8 =====\n"}
+,{"stream_name":"stdout","time":3257.454240747,"data":"\n"}
+,{"stream_name":"stdout","time":3257.454245054,"data":"===== phase 7, cell 9 =====\n"}
+,{"stream_name":"stdout","time":3257.454249571,"data":"\n"}
+,{"stream_name":"stdout","time":3257.45425429,"data":"===== phase 7, cell 10 =====\n"}
+,{"stream_name":"stdout","time":3257.454258906,"data":"\n"}
+,{"stream_name":"stdout","time":3257.454263226,"data":"===== phase 7, cell 11 =====\n"}
+,{"stream_name":"stdout","time":3257.454267806,"data":"finished runs found: none | predict-only mode: False\n"}
+,{"stream_name":"stdout","time":3257.454272462,"data":"\n"}
+,{"stream_name":"stdout","time":3257.45427694,"data":"===== phase 7, cell 12 =====\n"}
+,{"stream_name":"stdout","time":3264.278769846,"data":"BM25 dev grid (micro-F1@7, k1, b): [(np.float64(0.2123), 1.6, 0.9), (np.float64(0.1912), 1.2, 0.9), (np.float64(0.1745), 1.6, 0.75), (np.float64(0.1668), 0.9, 0.9)]\n"}
+,{"stream_name":"stdout","time":3291.5447748,"data":"BM25 (k1=1.6, b=0.9) on dev: micro-F1@7 0.2123 | P@7 0.2312 | R@7 0.1963 | 34s\n"}
+,{"stream_name":"stdout","time":3291.544838205,"data":"\n"}
+,{"stream_name":"stdout","time":3291.544845398,"data":"===== phase 7, cell 13 =====\n"}
+,{"stream_name":"stdout","time":3291.54485074,"data":"\n"}
+,{"stream_name":"stdout","time":3291.544855896,"data":"===== phase 7, cell 14 =====\n"}
+,{"stream_name":"stdout","time":3291.544870702,"data":"budget 52 min (3 used) | caps {'DAPT': 40, 'BL1': 20, 'BL3': 30, 'BL2': 30, 'BL4': 30} | DAPT off | upload off | predict-only mode: False | BiLSTM checkpoint: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt\n"}
+,{"stream_name":"stdout","time":3291.544875808,"data":"\n"}
+,{"stream_name":"stdout","time":3291.544879742,"data":"===== phase 7, cell 15 =====\n"}
+,{"stream_name":"stdout","time":3291.544883842,"data":"CELL FAILED: NameError name 'EVAL_MIN' is not defined\n"}
+,{"stream_name":"stdout","time":3291.544887831,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":3291.544891142,"data":"  File \"/kaggle/working/children/phase7_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":3291.544895963,"data":"    try: exec(compile(src, 'phase7_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":3291.544900089,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":3291.544903683,"data":"  File \"phase7_cell15\", line 9, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":3291.544907574,"data":"NameError: name 'EVAL_MIN' is not defined. Did you mean: 'CAP_MIN'?\n"}
+,{"stream_name":"stdout","time":3291.544911209,"data":"\n"}
+,{"stream_name":"stdout","time":3291.544914543,"data":"===== phase 7, cell 16 =====\n"}
+,{"stream_name":"stdout","time":3291.544917998,"data":"CELL FAILED: AssertionError no BiLSTM system exists: nothing to generate (attach the BiLSTM Phase 1 dataset or the retriever dataset)\n"}
+,{"stream_name":"stdout","time":3291.74596069,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":3291.746017791,"data":"  File \"/kaggle/working/children/phase7_run.py\", line 6, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":3291.746038637,"data":"    try: exec(compile(src, 'phase7_cell%d' % i, 'exec'), G)\n"}
+,{"stream_name":"stdout","time":3291.746043591,"data":"         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":3291.746047668,"data":"  File \"phase7_cell16\", line 4, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":3291.746052735,"data":"AssertionError: no BiLSTM system exists: nothing to generate (attach the BiLSTM Phase 1 dataset or the retriever dataset)\n"}
+,{"stream_name":"stdout","time":3293.005421678,"data":"\n"}
+,{"stream_name":"stdout","time":3293.005451649,"data":"================ SUMMARY ================\n"}
+,{"stream_name":"stdout","time":3293.005457521,"data":"Phase 2: ok | no prediction file was produced (read log.txt)             0.7 min | \n"}
+,{"stream_name":"stdout","time":3293.005463207,"data":"Phase 3: ok | no prediction file was produced (read log.txt)             0.2 min | \n"}
+,{"stream_name":"stdout","time":3293.005468875,"data":"Phase 4: ok                                                             20.4 min | 1517 cases, 50.0% predicted 1\n"}
+,{"stream_name":"stdout","time":3293.005474476,"data":"Phase 5: ok                                                             23.0 min | 13019 cases, 12.55 statutes/case\n"}
+,{"stream_name":"stdout","time":3293.005480275,"data":"Phase 6: ok | OUTPUT INVALID: expected [{id, summary}]                   7.9 min | \n"}
+,{"stream_name":"stdout","time":3293.005485995,"data":"Phase 7: ok | no prediction file was produced (read log.txt)             2.6 min | \n"}
+,{"stream_name":"stdout","time":3293.005491674,"data":"total notebook time: 55 min\n"}
+,{"stream_name":"stdout","time":3293.005497475,"data":"wrote /kaggle/working/bilstm_predictions.zip\n"}
+,{"stream_name":"stderr","time":3297.85706136,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3297.857119555,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3298.029954842,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3298.030018927,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3298.853735878,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3298.94848761,"data":"[NbConvertApp] Writing 220421 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3301.599478647,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3302.165862586,"data":"[NbConvertApp] Writing 547933 bytes to __results__.html\n"}
+]

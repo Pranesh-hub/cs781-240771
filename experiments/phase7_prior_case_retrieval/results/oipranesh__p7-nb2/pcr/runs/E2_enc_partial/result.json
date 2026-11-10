@@ -1,0 +1,25 @@
+{
+ "name": "E2_enc_partial",
+ "technique": "partial",
+ "note": "partial fine-tuning: the top half of the layers",
+ "control": false,
+ "dev_f1": 0.35019455252918286,
+ "dev_p": 0.3813559322033898,
+ "dev_r": 0.3237410071942446,
+ "dev_queries": 118,
+ "mode": "maxsim",
+ "other_mode_f1": 0.349082823790995,
+ "eval_minutes": 3.4042959968249003,
+ "hp": {
+  "frac": 0.5
+ },
+ "n_layers": null,
+ "n_prompt": null,
+ "lr": 3e-05,
+ "steps": 1039,
+ "train_minutes": 23.758405248324078,
+ "params_M": 84.758016,
+ "trainable_M": 30.091008,
+ "peak_mem_gb": 2.1699790954589844,
+ "teacher": null
+}

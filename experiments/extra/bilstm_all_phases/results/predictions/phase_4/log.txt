@@ -1,0 +1,77 @@
+
+===== phase 4, cell 0 =====
+
+===== phase 4, cell 1 =====
+device: Tesla T4 | work dir: /kaggle/working/cjpe
+
+===== phase 4, cell 2 =====
+Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)
+Kaggle credentials  : MISSING (KAGGLE_USERNAME not found)
+CELL FAILED: RuntimeError STOPPING EARLY (before any long step):
+  - KAGGLE_USERNAME / KAGGLE_KEY are missing: add them as Secrets (the LEGACY API key from kaggle.com/settings > API)
+Fix: Add-ons > Secrets > add the missing secret(s) and switch 'Attached' ON for this notebook, then run again. (Set REQUIRE_HF / REQUIRE_KAGGLE = False at the top of this cell to continue without them.)
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase4_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase4_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase4_cell2", line 41, in <module>
+RuntimeError: STOPPING EARLY (before any long step):
+  - KAGGLE_USERNAME / KAGGLE_KEY are missing: add them as Secrets (the LEGACY API key from kaggle.com/settings > API)
+Fix: Add-ons > Secrets > add the missing secret(s) and switch 'Attached' ON for this notebook, then run again. (Set REQUIRE_HF / REQUIRE_KAGGLE = False at the top of this cell to continue without them.)
+
+===== phase 4, cell 3 =====
+CJPE files not found locally -> downloading from Hugging Face (accept the dataset conditions on its page first)
+trying the token from the environment variable HF_TOKEN (37 characters)
+   accepted: user 'P-240771', access to Exploration-Lab/CS-781-Capstone OK
+
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]
+Fetching 3 files:  33%|███▎      | 1/3 [00:01<00:02,  1.14s/it]
+Fetching 3 files: 100%|██████████| 3/3 [00:08<00:00,  3.04s/it]
+Fetching 3 files: 100%|██████████| 3/3 [00:08<00:00,  2.85s/it]
+{'train': '703 MiB  /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/train.json', 'dev': '43 MiB  /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/dev.json', 'test': '34 MiB  /kaggle/working/cjpe/hf/Phase_4_CJPE/Test/test.json'}
+tokenizer: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/legal_bpe_32k_mask.json | vocabulary 32001
+[train] reading /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/train.json ...
+[train] 37387 cases | text field 'text' | label field 'label' | id field 'id'
+[dev] reading /kaggle/working/cjpe/hf/Phase_4_CJPE/Train/dev.json ...
+[dev] 1988 cases | text field 'text' | label field 'label' | id field 'id'
+[test] reading /kaggle/working/cjpe/hf/Phase_4_CJPE/Test/test.json ...
+[test] 1517 cases | text field 'text' | label field 'label' | id field 'id'
+[test] NOTE: test.json contains a label field. The task says test labels are private, so they are IGNORED here and never used for anything.
+[train] cases  37387 | tokens p50/p90/p99: 2688/8050/23799 | label counts: {0: 22067, 1: 15320}
+[dev] cases   1988 | tokens p50/p90/p99: 3838/9467/27424 | label counts: {0: 994, 1: 994}
+[test] cases   1517 | tokens p50/p90/p99: 4003/9794/24749 | label counts: none (test)
+majority-class baseline macro-F1 on dev would be about 0.333
+
+===== phase 4, cell 4 =====
+Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} 
+  missing (pre-train them first): ['gpt2_new', 'modernbert', 't5']
+
+===== phase 4, cell 5 =====
+
+===== phase 4, cell 6 =====
+
+===== phase 4, cell 7 =====
+new runs selected: ['P5'] | training windows 4, inference windows 8 | dev positive rate 0.500
+
+===== phase 4, cell 8 =====
+[P5_bilstm_partial] bilstm | technique partial | L=512 W=4 p_tail=0.5 | 76M params, 47.27M trained (62.0%) | lr 0.0005 (head 0.001) | EMA 0.999 | 16 cases/step
+   plan: 2337 steps = 37392 cases = 1.00 epochs | 0.32s/step -> ~12 min training + ~3.8 min inference
+   step 194/2337 | train loss 0.7192 | 1.2 min
+   step 388/2337 | train loss 0.6962 | 2.4 min
+   step 582/2337 | train loss 0.6946 | 3.5 min
+   [dev subset 1500, EMA, last window] step 584: AUC 0.4963 | macro-F1 0.3348
+   step 776/2337 | train loss 0.6937 | 4.8 min
+   step 970/2337 | train loss 0.6933 | 6.0 min
+   step 1164/2337 | train loss 0.6938 | 7.1 min
+   [dev subset 1500, EMA, last window] step 1168: AUC 0.4945 | macro-F1 0.3348
+   step 1358/2337 | train loss 0.6932 | 8.4 min
+   step 1552/2337 | train loss 0.6933 | 9.5 min
+   step 1746/2337 | train loss 0.6932 | 10.7 min
+   [dev subset 1500, EMA, last window] step 1753: AUC 0.4948 | macro-F1 0.3348
+   step 1940/2337 | train loss 0.6934 | 12.0 min
+   step 2134/2337 | train loss 0.6931 | 13.1 min
+   step 2328/2337 | train loss 0.6933 | 14.3 min
+   [dev subset 1500, EMA, last window] step 2337: AUC 0.4985 | macro-F1 0.3348
+[P5_bilstm_partial] DEV: AUC 0.5092 (last window only: 0.5032; chosen recency decay a=0.25) | macro-F1 rate-matched 0.5121 | tuned 0.3333 (thr 0.50) | at 0.5 0.3333 | 16.8 min
+   test: share predicted positive at the dev threshold = 0.000 (dev positive rate 0.500) -> policy 'rate_matched' used for the submission file
+   saved /kaggle/working/cjpe/submissions/P5_bilstm_partial.json (1517 predictions, format validated) and the ledger row

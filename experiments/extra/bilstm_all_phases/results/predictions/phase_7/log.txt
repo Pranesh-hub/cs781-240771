@@ -1,0 +1,83 @@
+
+===== phase 7, cell 0 =====
+
+===== phase 7, cell 1 =====
+
+===== phase 7, cell 2 =====
+device: Tesla T4 | work dir: /kaggle/working/pcr_bilstm
+
+===== phase 7, cell 3 =====
+Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)
+Kaggle credentials  : not provided (the backup upload will be a dry run)
+
+Credentials ready.
+
+===== phase 7, cell 4 =====
+
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]
+Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:01,  3.62it/s]
+Fetching 6 files:  33%|███▎      | 2/6 [00:00<00:00,  4.90it/s]
+Fetching 6 files:  50%|█████     | 3/6 [00:01<00:01,  2.11it/s]
+Fetching 6 files:  67%|██████▋   | 4/6 [00:03<00:02,  1.00s/it]
+Fetching 6 files:  83%|████████▎ | 5/6 [00:04<00:01,  1.07s/it]
+Fetching 6 files: 100%|██████████| 6/6 [00:07<00:00,  1.80s/it]
+Fetching 6 files: 100%|██████████| 6/6 [00:07<00:00,  1.24s/it]
+SCHEMA (detected): {"train": {"queries": {"id": "id", "text": "text", "labels": "relevant_candidates", "layout": "dict id -> record"}, "candidates": {"id": "id", "text": "text", "labels": null, "layout": "dict id -> record"}}, "dev": {"queries": {"id": "id", "text": "text", "labels": "relevant_candidates", "layout": "dict id -> record"}, "candidates": {"id": "id", "text": "text", "labels": null, "layout": "dict id -> record"}}, "test": {"queries": {"id": "id", "text": "text", "labels": null, "layout": "dict id -> record"}, "candidates": {"id": "id", "text": "text", "labels": null, "layout": "dict id -> record"}}
+split  queries  candidates  query_words_p50  cand_words_p50  cand_words_p90  gold_mean  gold_p50  gold_max  no_gold  labels_not_in_pool  queries_inside_own_pool  dup_cand_ids
+train      827        4320             4508            3632           12422       6.42       4.0      52.0     10.0                   0                      827             0
+  dev      118        1023             4619            4036           16598       8.25       5.0      92.0      0.0                   0                      118             0
+ test      237        1727             4653            3947           13490        NaN       NaN       NaN      NaN                   0                      237             0
+candidate-pool overlap between splits: {'train&dev': 436, 'train&test': 740, 'dev&test': 220} | every split is retrieved ONLY from its own pool
+dev: a query has 8.25 relevant candidates on average; the evaluator compares the top 7 with the WHOLE gold set (micro-F1@7)
+
+===== phase 7, cell 5 =====
+tokenised every document in 97s | chunk 512 tokens, 12 chunks by default (24 in the sweep), vocabulary 32001
+split       side  tokens_p50  tokens_p90 longer_than_default_chunks longer_than_big
+train    queries        5731       15929                        47%             18%
+train candidates        4609       15631                        37%             15%
+  dev    queries        5703       19699                        47%             17%
+  dev candidates        5135       21286                        42%             17%
+ test    queries        5895       17648                        48%             19%
+ test candidates        4963       17543                        42%             17%
+
+===== phase 7, cell 6 =====
+Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} 
+  missing (pre-train them first): ['gpt2_new', 'modernbert', 't5']
+
+===== phase 7, cell 7 =====
+
+===== phase 7, cell 8 =====
+
+===== phase 7, cell 9 =====
+
+===== phase 7, cell 10 =====
+
+===== phase 7, cell 11 =====
+finished runs found: none | predict-only mode: False
+
+===== phase 7, cell 12 =====
+BM25 dev grid (micro-F1@7, k1, b): [(np.float64(0.2123), 1.6, 0.9), (np.float64(0.1912), 1.2, 0.9), (np.float64(0.1745), 1.6, 0.75), (np.float64(0.1668), 0.9, 0.9)]
+BM25 (k1=1.6, b=0.9) on dev: micro-F1@7 0.2123 | P@7 0.2312 | R@7 0.1963 | 34s
+
+===== phase 7, cell 13 =====
+
+===== phase 7, cell 14 =====
+budget 52 min (3 used) | caps {'DAPT': 40, 'BL1': 20, 'BL3': 30, 'BL2': 30, 'BL4': 30} | DAPT off | upload off | predict-only mode: False | BiLSTM checkpoint: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt
+
+===== phase 7, cell 15 =====
+CELL FAILED: NameError name 'EVAL_MIN' is not defined
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase7_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase7_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase7_cell15", line 9, in <module>
+NameError: name 'EVAL_MIN' is not defined. Did you mean: 'CAP_MIN'?
+
+===== phase 7, cell 16 =====
+CELL FAILED: AssertionError no BiLSTM system exists: nothing to generate (attach the BiLSTM Phase 1 dataset or the retriever dataset)
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase7_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase7_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase7_cell16", line 4, in <module>
+AssertionError: no BiLSTM system exists: nothing to generate (attach the BiLSTM Phase 1 dataset or the retriever dataset)

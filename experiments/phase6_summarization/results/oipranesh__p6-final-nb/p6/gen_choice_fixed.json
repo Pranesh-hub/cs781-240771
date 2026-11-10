@@ -1,0 +1,16 @@
+{
+ "run": "S5h_encdec_hier_houlsby",
+ "setting": "beam 4",
+ "gen": {
+  "max_new": 510,
+  "min_new": 8,
+  "beams": 4,
+  "no_repeat": 3,
+  "rep_pen": 1.0,
+  "len_pen": 1.0,
+  "sample": false,
+  "dedupe": true
+ },
+ "strategy": "importance",
+ "decoder": "v2b"
+}

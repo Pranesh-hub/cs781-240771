@@ -1,0 +1,58 @@
+
+===== phase 2, cell 0 =====
+
+===== phase 2, cell 1 =====
+device: cuda | SELFTEST: False | training cap (min): 25
+
+===== phase 2, cell 2 =====
+
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]
+Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:00,  6.97it/s]
+Fetching 6 files:  67%|██████▋   | 4/6 [00:00<00:00, 13.37it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 15.15it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 13.97it/s]
+CELL FAILED: FileNotFoundError [Errno 2] No such file or directory: '/kaggle/working/phase2_bilstm/hf/Phase_2_LNER/Train/fold3-text.json'
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase2_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase2_cell2", line 46, in <module>
+  File "phase2_cell2", line 45, in jl
+FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/phase2_bilstm/hf/Phase_2_LNER/Train/fold3-text.json'
+
+===== phase 2, cell 3 =====
+CELL FAILED: NameError name 'train_texts' is not defined
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase2_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase2_cell3", line 17, in <module>
+NameError: name 'train_texts' is not defined
+
+===== phase 2, cell 4 =====
+BiLSTM tagger: feature dim 2048 | trainable 34.72M of 63.71M
+CELL FAILED: NameError name 'CLS_W' is not defined
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase2_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase2_cell4", line 15, in <module>
+NameError: name 'CLS_W' is not defined
+
+===== phase 2, cell 5 =====
+CELL FAILED: NameError name 'train_texts' is not defined
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase2_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase2_cell5", line 52, in <module>
+NameError: name 'train_texts' is not defined
+
+===== phase 2, cell 6 =====
+CELL FAILED: NameError name 'test_texts' is not defined
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase2_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase2_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase2_cell6", line 1, in <module>
+NameError: name 'test_texts' is not defined

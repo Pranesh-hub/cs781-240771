@@ -1,0 +1,15 @@
+{
+ "name": "Z0_phase1_zero_shot",
+ "technique": "zero-shot",
+ "note": "Phase 1 ModernBERT, no retrieval training",
+ "control": true,
+ "dev_f1": 0.24124513618677043,
+ "dev_p": 0.2627118644067797,
+ "dev_r": 0.22302158273381295,
+ "dev_queries": 118,
+ "mode": "maxsim",
+ "other_mode_f1": 0.22123401889938854,
+ "eval_minutes": 3.3521554986635844,
+ "params_M": 84.758016,
+ "trainable_M": 0.0
+}

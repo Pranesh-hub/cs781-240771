@@ -1,0 +1,19 @@
+{
+ "name": "G1_gpt2_tail512",
+ "model": "gpt2_new",
+ "family": "gpt2",
+ "K": 1,
+ "L": 512,
+ "params_M": 111.8,
+ "steps": 3005,
+ "cases_seen": 48080,
+ "best_eval_step": 3005,
+ "threshold": 0.38999999999999996,
+ "dev_macro_f1": 0.6708804401835979,
+ "dev_macro_f1_at_0p5": 0.6615188739712767,
+ "dev_macro_p": 0.6789354403030834,
+ "dev_macro_r": 0.6734985888454321,
+ "dev_cases": 3505,
+ "minutes": 35.0,
+ "history": "[(1002, 0.6637), (2003, 0.6657), (3005, 0.6826)]"
+}

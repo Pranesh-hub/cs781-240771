@@ -1,0 +1,12 @@
+{
+ "name": "C2_pool",
+ "technique": "pool",
+ "note": "pool-aware re-ranking ('sink', (0.2, 3))",
+ "control": true,
+ "adopted": false,
+ "dev_f1": 0.35352973874374655,
+ "dev_p": 0.38498789346246975,
+ "dev_r": 0.32682425488180883,
+ "dev_queries": 118,
+ "params": "('sink', (0.2, 3))"
+}

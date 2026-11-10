@@ -1,0 +1,23 @@
+{
+ "name": "E5_enc_prompt",
+ "technique": "prompt",
+ "note": "prompt tuning: 20 trained vectors in front of every chunk, encoder frozen",
+ "control": false,
+ "dev_f1": 0.31461923290717064,
+ "dev_p": 0.34261501210653755,
+ "dev_r": 0.2908530318602261,
+ "dev_queries": 118,
+ "mode": "maxsim",
+ "other_mode_f1": 0.3046136742634797,
+ "eval_minutes": 3.6460235595703123,
+ "hp": null,
+ "n_layers": null,
+ "n_prompt": 20,
+ "lr": 0.003,
+ "steps": 1104,
+ "train_minutes": 19.007592451572418,
+ "params_M": 84.773376,
+ "trainable_M": 0.01536,
+ "peak_mem_gb": 7.5569071769714355,
+ "teacher": null
+}

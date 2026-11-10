@@ -1,0 +1,14 @@
+{
+ "name": "N_ens_top2",
+ "technique": "ensemble",
+ "note": "mean of standardised scores of E2_enc_partial and E4_enc_ia3 (Phase 1 models only)",
+ "control": true,
+ "dev_f1": 0.35241801000555867,
+ "dev_p": 0.3837772397094431,
+ "dev_r": 0.32579650565262075,
+ "dev_queries": 118,
+ "members": [
+  "E2_enc_partial",
+  "E4_enc_ia3"
+ ]
+}

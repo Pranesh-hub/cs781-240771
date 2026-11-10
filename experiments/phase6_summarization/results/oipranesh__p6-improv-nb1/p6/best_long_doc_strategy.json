@@ -1,0 +1,161 @@
+{
+ "strategy": "head_tail",
+ "default": "head_tail",
+ "rule": "replace the default only if better by 0.005 with the paired 95% interval above 0",
+ "evidence": [
+  {
+   "strategy": "importance",
+   "diff_vs_default": 0.0043,
+   "ci_low": 0.0031,
+   "ci_high": 0.0057
+  },
+  {
+   "strategy": "section",
+   "diff_vs_default": 0.0035,
+   "ci_low": 0.0023,
+   "ci_high": 0.0049
+  },
+  {
+   "strategy": "tail",
+   "diff_vs_default": 0.0019,
+   "ci_low": 0.0007,
+   "ci_high": 0.0033
+  },
+  {
+   "strategy": "head",
+   "diff_vs_default": -0.0,
+   "ci_low": -0.0014,
+   "ci_high": 0.0015
+  }
+ ],
+ "table": [
+  {
+   "strategy": "head",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8153,
+   "bertscore_f1": 0.8153,
+   "rouge1_f": 0.3145,
+   "rougeL_f": 0.1798,
+   "fact_coverage": 0.1243,
+   "len_ratio": 0.4876,
+   "repetition3": 0.0367,
+   "rouge1_f_short": 0.3657,
+   "rouge1_f_long": 0.2568,
+   "fact_coverage_long": 0.0998,
+   "gen_sec_per_doc": 0.193,
+   "train_minutes": 6.0
+  },
+  {
+   "strategy": "tail",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8172,
+   "bertscore_f1": 0.8172,
+   "rouge1_f": 0.324,
+   "rougeL_f": 0.1833,
+   "fact_coverage": 0.1397,
+   "len_ratio": 0.4838,
+   "repetition3": 0.0343,
+   "rouge1_f_short": 0.378,
+   "rouge1_f_long": 0.2632,
+   "fact_coverage_long": 0.1098,
+   "gen_sec_per_doc": 0.192,
+   "train_minutes": 6.0
+  },
+  {
+   "strategy": "head_tail",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8153,
+   "bertscore_f1": 0.8153,
+   "rouge1_f": 0.3173,
+   "rougeL_f": 0.18,
+   "fact_coverage": 0.127,
+   "len_ratio": 0.4852,
+   "repetition3": 0.0348,
+   "rouge1_f_short": 0.3699,
+   "rouge1_f_long": 0.258,
+   "fact_coverage_long": 0.0979,
+   "gen_sec_per_doc": 0.191,
+   "train_minutes": 6.0
+  },
+  {
+   "strategy": "importance",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8196,
+   "bertscore_f1": 0.8196,
+   "rouge1_f": 0.3294,
+   "rougeL_f": 0.1851,
+   "fact_coverage": 0.1319,
+   "len_ratio": 0.4778,
+   "repetition3": 0.0353,
+   "rouge1_f_short": 0.3795,
+   "rouge1_f_long": 0.2728,
+   "fact_coverage_long": 0.0998,
+   "gen_sec_per_doc": 0.198,
+   "train_minutes": 6.0
+  },
+  {
+   "strategy": "section",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8188,
+   "bertscore_f1": 0.8188,
+   "rouge1_f": 0.3242,
+   "rougeL_f": 0.1837,
+   "fact_coverage": 0.1427,
+   "len_ratio": 0.474,
+   "repetition3": 0.0335,
+   "rouge1_f_short": 0.3761,
+   "rouge1_f_long": 0.2656,
+   "fact_coverage_long": 0.1051,
+   "gen_sec_per_doc": 0.206,
+   "train_minutes": 6.0
+  },
+  {
+   "strategy": "head@128",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8121,
+   "bertscore_f1": 0.8121,
+   "rouge1_f": 0.3051,
+   "rougeL_f": 0.1774,
+   "fact_coverage": 0.114,
+   "len_ratio": 0.4801,
+   "repetition3": 0.0373,
+   "rouge1_f_short": 0.3566,
+   "rouge1_f_long": 0.247,
+   "fact_coverage_long": 0.0866,
+   "gen_sec_per_doc": 0.188,
+   "train_minutes": 4.8
+  },
+  {
+   "strategy": "hier2:importance",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8123,
+   "bertscore_f1": 0.8123,
+   "rouge1_f": 0.3042,
+   "rougeL_f": 0.1736,
+   "fact_coverage": 0.1115,
+   "len_ratio": 0.4669,
+   "repetition3": 0.028,
+   "rouge1_f_short": 0.3555,
+   "rouge1_f_long": 0.2464,
+   "fact_coverage_long": 0.0807,
+   "gen_sec_per_doc": 0.753,
+   "train_minutes": 6.0
+  },
+  {
+   "strategy": "concat:importance",
+   "sel_metric": "bertscore_f1",
+   "sel_value": 0.8125,
+   "bertscore_f1": 0.8125,
+   "rouge1_f": 0.4049,
+   "rougeL_f": 0.211,
+   "fact_coverage": 0.2282,
+   "len_ratio": 1.3308,
+   "repetition3": 0.1968,
+   "rouge1_f_short": 0.4204,
+   "rouge1_f_long": 0.3874,
+   "fact_coverage_long": 0.1796,
+   "gen_sec_per_doc": 0.561,
+   "train_minutes": 6.0
+  }
+ ]
+}

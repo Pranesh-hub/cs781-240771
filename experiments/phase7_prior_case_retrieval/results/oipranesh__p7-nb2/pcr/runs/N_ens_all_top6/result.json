@@ -1,0 +1,19 @@
+{
+ "name": "N_ens_all_top6",
+ "technique": "ensemble",
+ "note": "mean of standardised scores of ['E2_enc_partial', 'E4_enc_ia3', 'E1_enc_full', 'E3_enc_lorma', 'E6_enc_half_kd', 'E5_enc_prompt']",
+ "control": true,
+ "adopted": true,
+ "dev_f1": 0.3635352973874375,
+ "dev_p": 0.39588377723970947,
+ "dev_r": 0.33607399794450155,
+ "dev_queries": 118,
+ "members": [
+  "E2_enc_partial",
+  "E4_enc_ia3",
+  "E1_enc_full",
+  "E3_enc_lorma",
+  "E6_enc_half_kd",
+  "E5_enc_prompt"
+ ]
+}

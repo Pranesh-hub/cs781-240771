@@ -1,0 +1,37 @@
+phase,rank,run,technique,family,score,source,note
+2,1,prediction.zip (6a6752c271): champion + counsel + JUDGE rules,full + rules,gpt2,LEADERBOARD strict macro-F1 0.2858 (dev ~0.2995),local phase2_cs781 + scoring_result (1).zip,"matched to score by timestamp (file 17:49, score 17:53)"
+2,2,prediction_7.zip (564bac316c),full,gpt2,LEADERBOARD 0.2854,local phase2_cs781 + scoring_result.zip,"matched by timestamp (file 06:47, score 06:48)"
+2,3,prediction_wit_hybrid_verified.json (4b5cfe6760),full + WIT hybrid,gpt2,unscored,local phase2_cs781,no score recorded
+2,4,New folder (2)/prediction.json (f2d69fa79f),full + rules,gpt2,unscored,local phase2_cs781,latest file (11 Oct 23:43)
+2,5,prediction_6.zip (60999cc390),full,gpt2,unscored,local phase2_cs781,
+2,6,prediction_3.zip (a764bc8259),full,gpt2,unscored,local phase2_cs781,same content as prediction_x.zip
+3,1,E4_qlora,qlora,gpt2,dev macro-F1 CL 0.290 / IT 0.339 (mean 0.315),Phase 3 notebook logs (notebook6d390d6f69 series) + recovery ledger,
+3,2,E6_kd_student,kd,gpt2,dev macro-F1 CL 0.284 / IT 0.328 (mean 0.306),Phase 3 notebook logs (notebook6d390d6f69 series) + recovery ledger,
+3,3,E2_lorma_plus,lorma+,gpt2,dev macro-F1 CL 0.238 / IT 0.344 (mean 0.291),Phase 3 notebook logs (notebook6d390d6f69 series) + recovery ledger,
+3,4,E1_lora,lora,gpt2,dev macro-F1 CL 0.239 / IT 0.323 (mean 0.281),Phase 3 notebook logs (notebook6d390d6f69 series) + recovery ledger,scores from the context pack summary because the log parse was ambiguous
+3,5,E0a_full_sent,full,gpt2,dev macro-F1 CL 0.220 / IT 0.341 (mean 0.280),Phase 3 notebook logs (notebook6d390d6f69 series) + recovery ledger,
+3,6,E3_ia3,ia3,gpt2,dev macro-F1 CL 0.220 / IT 0.267 (mean 0.243),Phase 3 notebook logs (notebook6d390d6f69 series) + recovery ledger,
+4,1,"Ensemble (GPT-2 full + encoder full), fullRun.ipynb",ensemble,gpt2 + modernbert,"dev macro-F1 0.767, AUC 0.842",context pack README; local CS781 phase4/Didnt submit/fullRun.ipynb,never submitted
+4,2,P2_enc_full_W8,full,modernbert,dev AUC 0.8327; F1 rate-matched 0.7545 / tuned 0.7643,Kaggle armankrsingh/notebook3393974db1 ledger.csv,= prediction_best_single.json = local Didnt submit prediction2/3
+4,3,P2_enc_full,full,modernbert,dev AUC 0.8278; F1 rate-matched 0.7485 / tuned 0.7526,same ledger,= local Didnt submit prediction4
+4,4,P1_gpt2_full,full,gpt2,dev AUC 0.8091; F1 rate-matched 0.7243 / tuned 0.7298,same ledger,
+4,5,P6_gpt2_ia3,ia3,gpt2,dev AUC 0.7674 (F1 not recorded),context pack summary,undertrained; checkpoint not on disk
+4,6,G1_gpt2_tail512 (the submitted run),full,gpt2,dev macro-F1 0.6709; LEADERBOARD 0.6613,Kaggle cs781-gpt2-pred-phase4; local CS781 phase4/prediction1.zip + scoring_result1.zip,"scoring_result2.zip is identical to scoring_result1 (0.6613), so the ensemble file prediction2.zip has no separate score"
+5,1,8-member encoder mean ensemble (Part 3),ensemble,modernbert,val macro-F1 0.4128 (95%% CI 0.405-0.420),context pack 00b summary (measured on Kaggle); notebooks phase5_lsi_*,TF-IDF baseline 0.376; E4 BiLSTM never ran
+5,2,E6_enc_full,full,modernbert,val macro-F1 0.3930,context pack 00b summary (measured on Kaggle); notebooks phase5_lsi_*,
+5,3,E2_lorma_plus,lorma+,gpt2,val macro-F1 0.3710,context pack 00b summary (measured on Kaggle); notebooks phase5_lsi_*,
+5,4,E5_distilled_student,kd,gpt2,val macro-F1 0.3610,context pack 00b summary (measured on Kaggle); notebooks phase5_lsi_*,
+5,5,E1_gpt2_full,full,gpt2,val macro-F1 0.3580,context pack 00b summary (measured on Kaggle); notebooks phase5_lsi_*,
+5,6,E3_t5,full,t5,val macro-F1 0.1100,context pack 00b summary (measured on Kaggle); notebooks phase5_lsi_*,
+6,1,"FINAL: S5h multi-chunk encoder + GPT-2 decoder, beam 4, byte-level decoder fix",houlsby,modernbert + gpt2,BERTScore F1 0.8499,Kaggle oipranesh/p6-final-nb ledger.csv + decode_fix_comparison.csv,local Phase6/submissions/prediction10.zip = Kaggle p6-final-nb prediction.json (hash match)
+6,2,S9_encdec_lorma,lorma+,modernbert + gpt2,BERTScore F1 0.8213,Kaggle oipranesh/p6-final-nb ledger.csv + decode_fix_comparison.csv,local prediction3.zip (hash match)
+6,3,S8_gpt2_full,full,gpt2,BERTScore F1 0.8175,Kaggle oipranesh/p6-final-nb ledger.csv + decode_fix_comparison.csv,local prediction4.zip (hash match)
+6,4,S6_gpt2_6L_kd,kd,gpt2,BERTScore F1 0.8165,Kaggle oipranesh/p6-final-nb ledger.csv + decode_fix_comparison.csv,local prediction5.zip; no-KD control 0.8150
+6,5,S3_gpt2_lora,lora,gpt2,BERTScore F1 0.8151,Kaggle oipranesh/p6-final-nb ledger.csv + decode_fix_comparison.csv,local prediction6.zip (hash match)
+6,6,S4_gpt2_prompt,prompt,gpt2,BERTScore F1 0.8133,Kaggle oipranesh/p6-final-nb ledger.csv + decode_fix_comparison.csv,
+7,1,E2_enc_partial,partial,modernbert,dev micro-F1@7 0.3502,Kaggle oipranesh/p7-nb2 ledger.csv,
+7,2,E4_enc_ia3,ia3,modernbert,dev micro-F1@7 0.3480,Kaggle oipranesh/p7-nb2 ledger.csv,
+7,3,E1_enc_full,full,modernbert,dev micro-F1@7 0.3457,Kaggle oipranesh/p7-nb2 ledger.csv,
+7,4,E3_enc_lorma,lorma+,modernbert,dev micro-F1@7 0.3446,Kaggle oipranesh/p7-nb2 ledger.csv,compulsory technique
+7,5,E6_enc_half_kd,kd,modernbert,dev micro-F1@7 0.3435,Kaggle oipranesh/p7-nb2 ledger.csv,student has 64% of teacher params
+7,6,E5_enc_prompt,prompt,modernbert,dev micro-F1@7 0.3146,Kaggle oipranesh/p7-nb2 ledger.csv,

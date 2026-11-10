@@ -1,0 +1,62 @@
+{
+  "domains": {
+    "CL": {
+      "weight_E0a": 0.55,
+      "method": "arithmetic",
+      "smooth": 0.5,
+      "alpha": 0.25,
+      "bias": {
+        "ArgumentRespondent": 1.0,
+        "ArgumentPetitioner": 0.75
+      }
+    },
+    "IT": {
+      "weight_E0a": 0.5,
+      "method": "geometric",
+      "smooth": 0.25,
+      "alpha": 1.0,
+      "bias": {
+        "RulingByLowerCourt": 1.0,
+        "RulingByPresentCourt": 1.0
+      }
+    }
+  },
+  "models": [
+    "E0a_full_sent",
+    "E6_kd_student"
+  ],
+  "development_scores": [
+    {
+      "domain": "CL",
+      "method": "arithmetic",
+      "weight_E0a": 0.55,
+      "weight_KD": 0.44999999999999996,
+      "smooth": 0.5,
+      "transition_alpha": 0.25,
+      "bias": {
+        "ArgumentRespondent": 1.0,
+        "ArgumentPetitioner": 0.75
+      },
+      "macro_f1": 0.4205134449678472,
+      "macro_f1_all13": 0.35581906881894765,
+      "accuracy": 0.46060171919770776
+    },
+    {
+      "domain": "IT",
+      "method": "geometric",
+      "weight_E0a": 0.5,
+      "weight_KD": 0.5,
+      "smooth": 0.25,
+      "transition_alpha": 1.0,
+      "bias": {
+        "RulingByLowerCourt": 1.0,
+        "RulingByPresentCourt": 1.0
+      },
+      "macro_f1": 0.45039358451038997,
+      "macro_f1_all13": 0.3811022638164837,
+      "accuracy": 0.5241286863270778
+    }
+  ],
+  "test_labels_used_for_tuning": false,
+  "decision": "freeze_existing_candidate"
+}

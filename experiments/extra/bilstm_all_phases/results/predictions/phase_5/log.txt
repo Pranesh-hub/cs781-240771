@@ -1,0 +1,107 @@
+
+===== phase 5, cell 0 =====
+
+===== phase 5, cell 1 =====
+
+===== phase 5, cell 2 =====
+device: Tesla T4 | work dir: /kaggle/working/lsi
+
+===== phase 5, cell 3 =====
+Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)
+Kaggle credentials  : not provided (the backup upload will be a dry run)
+
+Credentials ready.
+
+===== phase 5, cell 4 =====
+macro-F1 convention used for tuning and selection: present_in_val (macro_f1_present). All three variants are reported everywhere. The official evaluator's convention is unresolved.
+
+===== phase 5, cell 5 =====
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 42750 examples [00:04, 8561.90 examples/s]
+Generating train split: 42750 examples [00:05, 8432.04 examples/s]
+
+Generating validation split: 0 examples [00:00, ? examples/s]
+Generating validation split: 10181 examples [00:00, 13017.95 examples/s]
+Generating validation split: 10181 examples [00:00, 12803.72 examples/s]
+
+Generating test split: 0 examples [00:00, ? examples/s]
+Generating test split: 13019 examples [00:00, 13297.81 examples/s]
+Generating test split: 13019 examples [00:00, 13146.01 examples/s]
+{'train': 42750, 'dev': 10181, 'test': 13019} cases per split
+[test] NOTE: the test split has a label field. Test labels are private, so it is IGNORED and never used.
+
+=== LABEL UNIVERSE: 100 statutes (ids 0..99) = train ∪ validation | 100 occur in train, 100 in validation ===
+statutes seen ONLY in validation (cannot be learned from train): 0 [] | statutes seen only in train: 0
+labels per case: train mean 3.70 / median 3 / p90 7 / max 31 | validation mean 3.92 | cases with no label: train 0.00%, validation 0.00%
+train support per statute: min 272 / median 679 / max 11730 | statutes with < 5 training cases: 0 | with < 20: 0
+most / least frequent statutes in train:
+ statute  train  validation
+       5  11730        2936
+      34  10380        2596
+      97   7880        1970
+      43   7728        1932
+      39   7120        1779
+      12   4324        1086
+      13   4136        1033
+      10   4134        1033
+      66    309          78
+      92    309          77
+      23    304          80
+      25    287          72
+      84    272          68
+most frequent statute pairs in one case (statute, statute, cases): [(5, 34, 3644), (12, 13, 3511), (43, 97, 3385), (5, 43, 3271), (13, 14, 2831)]
+
+=== DOCUMENT LENGTH (words, split on spaces) ===
+split  cases  p50  p90  p99    max >512 >2048 >4096
+train  42750  430 2766 8142  86858  46%   16%    5%
+  dev  10181  543 2957 8855  69230  52%   18%    5%
+ test  13019  532 2811 8306 134848  51%   17%    5%
+Spearman correlation between document length and the number of statutes of a case (train): 0.053
+saved /kaggle/working/lsi/data_overview.png
+
+===== phase 5, cell 6 =====
+tokenizer: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/legal_bpe_32k_mask.json | vocabulary 32001
+[train] tokenised 42750 cases in 72s
+[dev] tokenised 10181 cases in 19s
+[test] tokenised 13019 cases in 23s
+
+DOCUMENT LENGTH IN TOKENS (of the kept text; very long documents were trimmed to both ends before tokenising):
+split  p50  p90   p99 >512 >2048 >4096 >8192
+train  621 4037 11907  56%   24%   10%    2%
+  dev  781 4354 13084  61%   28%   11%    3%
+ test  772 4156 12806  61%   27%   10%    3%
+
+===== phase 5, cell 7 =====
+Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} 
+  missing (pre-train them first): ['gpt2_new', 'modernbert', 't5']
+
+===== phase 5, cell 8 =====
+
+===== phase 5, cell 9 =====
+
+===== phase 5, cell 10 =====
+window order both | 4 windows of 512 tokens | chance-level macro AP 0.039
+
+===== phase 5, cell 11 =====
+[E4_bilstm_partial] bilstm | technique partial | L=512 W=4 order=both loss=bce | 68M params, 39.07M trained (57.4%) | lr 0.0005 (head 0.001) | 16 cases/step
+   plan: 2356 steps = 37696 cases = 0.88 epochs | 0.32s/step -> ~12 min training + ~10.6 min inference
+   step 196/2356 | train loss 0.2039 | 1.2 min
+   step 392/2356 | train loss 0.1396 | 2.3 min
+   step 588/2356 | train loss 0.1375 | 3.5 min
+   [dev subset 1000, EMA, first window] step 589: macro AP 0.0646
+   step 784/2356 | train loss 0.1367 | 4.7 min
+   step 980/2356 | train loss 0.1359 | 5.8 min
+   step 1176/2356 | train loss 0.1311 | 7.0 min
+   [dev subset 1000, EMA, first window] step 1178: macro AP 0.0811
+   step 1372/2356 | train loss 0.1328 | 8.2 min
+   step 1568/2356 | train loss 0.1311 | 9.3 min
+   step 1764/2356 | train loss 0.1305 | 10.5 min
+   [dev subset 1000, EMA, first window] step 1767: macro AP 0.0959
+   step 1960/2356 | train loss 0.1307 | 11.7 min
+   step 2156/2356 | train loss 0.1270 | 12.9 min
+   step 2352/2356 | train loss 0.1251 | 14.0 min
+   [dev subset 1000, EMA, first window] step 2356: macro AP 0.1109
+[E4_bilstm_partial] DEV: macro-F1 [present_in_val] 0.1145 (policy per_label; all policies {"global_top1": 0.1002, "card_matched": 0.0674, "per_label": 0.1145}) | present-in-val 0.1150 | universe 0.1150 (zd1 0.1150) | micro-F1 0.2656 | subset acc 0.0000 | macro AP 0.0997 (first window only 0.0977; aggregation 'max') | 20.5 min
+   labels per case: dev true 3.92, dev predicted 12.82, test predicted 12.55 | TF-IDF baseline macro-F1 nan
+   saved /kaggle/working/lsi/submissions/E4_bilstm_partial.json (13019 cases, format validated) and the ledger row

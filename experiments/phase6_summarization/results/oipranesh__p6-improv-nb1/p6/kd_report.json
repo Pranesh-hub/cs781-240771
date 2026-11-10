@@ -1,0 +1,45 @@
+{
+ "teacher": "S8_gpt2_full",
+ "student_layers": 6,
+ "table": [
+  {
+   "name": "S8_gpt2_full",
+   "params_M": 110.03,
+   "trainable_M": 110.026,
+   "peak_mem_train_gb": 9.4,
+   "peak_mem_gen_gb": 0.94,
+   "gen_sec_per_doc": 0.184,
+   "ckpt_mb": 513.5,
+   "bertscore_f1": 0.8175,
+   "rouge1_f": 0.3207,
+   "rougeL_f": 0.1821,
+   "fact_coverage": 0.1338
+  },
+  {
+   "name": "S6_gpt2_6L_kd",
+   "params_M": 67.5,
+   "trainable_M": 67.499,
+   "peak_mem_train_gb": 9.02,
+   "peak_mem_gen_gb": 0.62,
+   "gen_sec_per_doc": 0.109,
+   "ckpt_mb": 351.3,
+   "bertscore_f1": 0.8165,
+   "rouge1_f": 0.3096,
+   "rougeL_f": 0.1805,
+   "fact_coverage": 0.1202
+  },
+  {
+   "name": "S6c_gpt2_6L_nokd",
+   "params_M": 67.5,
+   "trainable_M": 67.499,
+   "peak_mem_train_gb": 6.92,
+   "peak_mem_gen_gb": 1.87,
+   "gen_sec_per_doc": 0.11,
+   "ckpt_mb": 351.3,
+   "bertscore_f1": 0.815,
+   "rouge1_f": 0.3171,
+   "rougeL_f": 0.1817,
+   "fact_coverage": 0.125
+  }
+ ]
+}

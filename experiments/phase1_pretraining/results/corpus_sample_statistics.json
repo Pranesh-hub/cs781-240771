@@ -1,0 +1,58 @@
+{
+ "supreme_court": {
+  "file_gb": 1.322567168,
+  "sampled_docs": 540,
+  "words_median": 3283.0,
+  "words_mean": 4574.951851851852,
+  "words_p90": 8786.800000000003,
+  "bytes_per_token": 4.725626581226786,
+  "est_tokens_billion": 0.2798712816738596,
+  "est_docs": 49421,
+  "type_token_ratio": 0.011997289582694491,
+  "token_share": 0.06253123391604698
+ },
+ "high_courts": {
+  "file_gb": 10.672497795,
+  "sampled_docs": 600,
+  "words_median": 129.0,
+  "words_mean": 340.385,
+  "words_p90": 777.6000000000008,
+  "bytes_per_token": 3.961601111483735,
+  "est_tokens_billion": 2.693985965437807,
+  "est_docs": 5172208,
+  "type_token_ratio": 0.040202338917687125,
+  "token_share": 0.6019133709032977
+ },
+ "tribunals": {
+  "file_gb": 6.483962193,
+  "sampled_docs": 600,
+  "words_median": 503.0,
+  "words_mean": 1474.53,
+  "words_p90": 4014.8,
+  "bytes_per_token": 4.82507615821412,
+  "est_tokens_billion": 1.3438051505076916,
+  "est_docs": 721139,
+  "type_token_ratio": 0.017715114190462927,
+  "token_share": 0.3002444327314262
+ },
+ "acts": {
+  "file_gb": 0.728801891,
+  "sampled_docs": 382,
+  "words_median": 3016.0,
+  "words_mean": 6656.421465968587,
+  "words_p90": 14647.200000000026,
+  "bytes_per_token": 4.611461612341198,
+  "est_tokens_billion": 0.15804140905121702,
+  "est_docs": 18379,
+  "type_token_ratio": 0.013080664234223858,
+  "token_share": 0.03531096244922924
+ },
+ "vocab_jaccard_top3000": {
+  "supreme_court|high_courts": 0.45489815712900095,
+  "supreme_court|tribunals": 0.5033826108744676,
+  "supreme_court|acts": 0.4955134596211366,
+  "high_courts|tribunals": 0.3882461823229986,
+  "high_courts|acts": 0.3410818059901654,
+  "tribunals|acts": 0.422475106685633
+ }
+}

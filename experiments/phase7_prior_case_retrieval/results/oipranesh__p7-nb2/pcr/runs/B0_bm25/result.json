@@ -1,0 +1,13 @@
+{
+ "name": "B0_bm25",
+ "technique": "bm25",
+ "note": "lexical baseline (not a Phase 1 model)",
+ "control": true,
+ "adopted": true,
+ "dev_f1": 0.2123401889938855,
+ "dev_p": 0.23123486682808717,
+ "dev_r": 0.1963001027749229,
+ "dev_queries": 118,
+ "k1": 1.6,
+ "b": 0.9
+}

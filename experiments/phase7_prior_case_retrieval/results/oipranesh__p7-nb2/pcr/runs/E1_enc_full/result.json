@@ -1,0 +1,23 @@
+{
+ "name": "E1_enc_full",
+ "technique": "full",
+ "note": "full fine-tuning (also the distillation teacher)",
+ "control": false,
+ "dev_f1": 0.3457476375764313,
+ "dev_p": 0.3765133171912833,
+ "dev_r": 0.31963001027749227,
+ "dev_queries": 118,
+ "mode": "mean",
+ "other_mode_f1": 0.3368538076709283,
+ "eval_minutes": 3.4070715506871543,
+ "hp": null,
+ "n_layers": null,
+ "n_prompt": null,
+ "lr": 2e-05,
+ "steps": 1359,
+ "train_minutes": 33.260866125424705,
+ "params_M": 84.758016,
+ "trainable_M": 84.758016,
+ "peak_mem_gb": 2.7044448852539062,
+ "teacher": null
+}

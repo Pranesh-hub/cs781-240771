@@ -1,0 +1,122 @@
+
+===== phase 6, cell 0 =====
+
+===== phase 6, cell 1 =====
+
+===== phase 6, cell 2 =====
+device: Tesla T4 | torch 2.11.0+cu130 | transformers 5.20.2 | rouge_score lib: True | bert_score lib: True | work dir: /kaggle/working/p6
+
+===== phase 6, cell 3 =====
+Hugging Face token : OK (user 'P-240771', access to Exploration-Lab/CS-781-Capstone confirmed, 37 characters)
+Kaggle credentials  : not provided (the backup upload will be a dry run)
+
+Credentials ready.
+
+===== phase 6, cell 4 =====
+ROUGE implementation: rouge_score (Porter stemming on) | BERTScore: library default for en (not necessarily the official setting)
+
+===== phase 6, cell 5 =====
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 7030 examples [00:03, 2296.93 examples/s]
+Generating train split: 7030 examples [00:03, 2267.13 examples/s]
+
+Generating test split: 0 examples [00:00, ? examples/s]
+Generating test split: 100 examples [00:00, 4034.11 examples/s]
+Hugging Face splits found: {'train': 7030, 'test': 100}
+
+SCHEMA: train keys ['document', 'id', 'summary'] | test keys ['document', 'id', 'summary']
+  using id='id', document='document', summary='summary' (train) | id='id', document='document' (test)
+[test] NOTE: the test records contain a 'summary' field. Test references are private, so it is IGNORED and never read.
+
+ROWS: train 7030 | test 100
+MISSING / EMPTY: {'train_empty_doc': 0, 'train_empty_summary': 2, 'test_empty_doc': 0, 'train_missing_id': 0, 'test_missing_id': 0}
+DUPLICATES: train ids 0 [] | test ids 0 [] | identical train documents 27 | test documents identical to a train document 0
+dropping 2 training records with an empty document or summary
+
+HELD-OUT VALIDATION SPLIT (made from train; references kept apart from training): train 6325 | validation 703 (fraction 0.1, min 100, max 1000, seed 781) | scored subset: 400 documents, signature 06b37822b7 (identical in every notebook)
+
+LENGTHS IN WORDS:
+                what    n  mean  p10  p50  p90    max
+     train documents 6325  4343 1350 3138 7849  90410
+validation documents  703  4603 1339 3073 7855 139645
+      test documents  100  4782 1503 3171 8562  39695
+     train summaries 6325   836  294  641 1497  17654
+validation summaries  703   871  280  601 1512  27768
+summary / document length ratio (train): median 0.217, p10 0.092, p90 0.397
+share of summary word types NOT in the document (abstractiveness, first 500 train pairs): 0.101
+saved /kaggle/working/p6/data_overview.png
+
+===== phase 6, cell 6 =====
+tokenizer: /kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/legal_bpe_32k_mask.json | vocabulary 32001 | PAD=0 UNK=1 BOS=2 EOS=3 MASK=32000 | round trip OK: False -> 'The appellant was convicted under Section 302 IPC on 12 . 03 . 1998 ; the appeal is dismissed .'
+[train] tokenised 6325 documents (1062351 sentences) in 94s
+[val] tokenised 703 documents (121268 sentences) in 10s
+[test] tokenised 100 documents (18397 sentences) in 1s
+
+LENGTHS IN TOKENS (Phase 1 tokenizer):
+                what  p10  p50  p75   p90   max >512 >1024 >2048 >4096
+     train documents 1589 3693 5837  9199 62414 100%   97%   81%   44%
+validation documents 1575 3620 5827  9195 61386 100%   96%   80%   43%
+      test documents 1773 3804 6428 10302 46028 100%   96%   84%   44%
+     train summaries  347  761 1150  1790 20642  74%   31%    7%    2%
+validation summaries  328  719 1155  1796 32718  71%   29%    8%    2%
+summary tokens p75 1150, p90 1790 | short/long document threshold (validation median) 3620 tokens
+
+===== phase 6, cell 7 =====
+Phase 1 models found: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'} 
+  missing: ['gpt2_new', 'modernbert', 't5'] 
+  architectures that can run: ['bilstm'] | cannot run: ['gpt2', 't5', 'encdec']
+
+===== phase 6, cell 8 =====
+
+===== phase 6, cell 9 =====
+
+===== phase 6, cell 10 =====
+nothing to restore: no earlier part's output is attached (fine for this part)
+
+===== phase 6, cell 11 =====
+long-document input strategy for the experiments: 'head_tail' (DEFAULT (Part 1 study result not attached))
+  bilstm  budgets: input 512 tokens, summary 256 tokens
+
+===== phase 6, cell 12 =====
+[S7_bilstm_partial] bilstm | technique partial | strategy head_tail | input 512 + summary 256 tokens | 92.0M params, 63.01M trained (68.49%) | lr 0.0005 | fp16 autocast | 6325 training pairs
+   plan: 317 steps x 20 pairs = 1.00 epochs | 0.83s/step -> ~4 min training (cap 30 min)
+phase6_cell9:168: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+   step 31/317 | train CE 6.5603 | 0.5 min
+   step 62/317 | train CE 6.2358 | 1.0 min
+   [validation loss, EMA weights, 64 docs] step 79: 5.6443
+   step 93/317 | train CE 5.8672 | 1.5 min
+   step 124/317 | train CE 5.7145 | 1.9 min
+   step 155/317 | train CE 5.5316 | 2.4 min
+   [validation loss, EMA weights, 64 docs] step 158: 5.4358
+   step 186/317 | train CE 5.4817 | 2.9 min
+   step 217/317 | train CE 5.4000 | 3.3 min
+   [validation loss, EMA weights, 64 docs] step 238: 5.3201
+   step 248/317 | train CE 5.3404 | 3.8 min
+   step 279/317 | train CE 5.2605 | 4.3 min
+   step 310/317 | train CE 5.2074 | 4.7 min
+   [validation loss, EMA weights, 64 docs] step 317: 5.2526
+   validation loss: raw 5.2463 | EMA 5.2526 -> keeping the raw weights
+
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]
+Loading weights:  62%|██████▏   | 243/389 [00:00<00:00, 2424.01it/s]
+Loading weights: 100%|██████████| 389/389 [00:00<00:00, 2472.42it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+BERTScore scorer: model roberta-large | layer 17 | rescale False (library default setting, NOT necessarily the official one)
+[S7_bilstm_partial] VALIDATION (150 docs; NOT official test scores): BERTScore F1 0.8036 | ROUGE-1 F1 0.2791 | ROUGE-L F1 0.1737 | fact coverage 0.117 | length ratio 0.37 | repetition 0.030 | unsupported 0.397 | 0.06 s/doc | empty 0
+   test submission /kaggle/working/p6/submissions/S7_bilstm_partial.json (100 summaries, format validated, 0.1 min, empty outputs 0)
+   saved runs/S7_bilstm_partial/ (result, validation summaries, per-document scores), checkpoint 350.9 MiB and the ledger row | 5.7 min in total

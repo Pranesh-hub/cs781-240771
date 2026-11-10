@@ -1,0 +1,23 @@
+{
+ "name": "E4_enc_ia3",
+ "technique": "ia3",
+ "note": "IA3: learned rescaling of keys, values and the FFN input",
+ "control": false,
+ "dev_f1": 0.34797109505280716,
+ "dev_p": 0.3789346246973366,
+ "dev_r": 0.32168550873586843,
+ "dev_queries": 118,
+ "mode": "maxsim",
+ "other_mode_f1": 0.3368538076709283,
+ "eval_minutes": 3.7090469439824423,
+ "hp": null,
+ "n_layers": null,
+ "n_prompt": null,
+ "lr": 0.003,
+ "steps": 1259,
+ "train_minutes": 23.758231389522553,
+ "params_M": 84.790272,
+ "trainable_M": 0.032256,
+ "peak_mem_gb": 8.300172805786133,
+ "teacher": null
+}

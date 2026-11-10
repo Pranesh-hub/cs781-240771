@@ -1,0 +1,26 @@
+{
+ "name": "E3_enc_lorma",
+ "technique": "lorma_plus",
+ "note": "LoRMA+: multiplicative low-rank adaptation of q and v (compulsory)",
+ "control": false,
+ "dev_f1": 0.34463590883824347,
+ "dev_p": 0.37530266343825663,
+ "dev_r": 0.3186022610483042,
+ "dev_queries": 118,
+ "mode": "maxsim",
+ "other_mode_f1": 0.3368538076709283,
+ "eval_minutes": 3.850273275375366,
+ "hp": {
+  "r": 16,
+  "alpha": 32
+ },
+ "n_layers": null,
+ "n_prompt": null,
+ "lr": 0.0005,
+ "steps": 1836,
+ "train_minutes": 33.25182551542918,
+ "params_M": 85.34784,
+ "trainable_M": 0.589824,
+ "peak_mem_gb": 8.43558406829834,
+ "teacher": null
+}

@@ -1,0 +1,100 @@
+
+===== phase 3, cell 0 =====
+
+===== phase 3, cell 1 =====
+device: cuda Tesla T4
+not found locally: ['CL_train.json', 'CL_dev.json', 'CL_test.json', 'IT_train.json', 'IT_dev.json', 'IT_test.json', 'label_vocab.json'] -> downloading from Hugging Face (gated dataset)
+
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  8.01it/s]
+Fetching 7 files:  29%|██▊       | 2/7 [00:00<00:00,  7.57it/s]
+Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 21.11it/s]
+CL_train.json      /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/CL_train.json
+CL_dev.json        /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/CL_dev.json
+CL_test.json       /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Test/CL_test.json
+IT_train.json      /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/IT_train.json
+IT_dev.json        /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/IT_dev.json
+IT_test.json       /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Test/IT_test.json
+label_vocab.json   /kaggle/working/phase3_rr/hf_data/Phase_3_RR/Train/label_vocab.json
+
+===== phase 3, cell 2 =====
+label_vocab: ['Fact', 'Issue', 'ArgumentPetitioner', 'ArgumentRespondent', 'Statute', 'Dissent', 'PrecedentReliedUpon', 'PrecedentNotReliedUpon', 'PrecedentOverruled', 'RulingByLowerCourt', 'RatioOfTheDecision', 'RulingByPresentCourt', 'None'] | n = 13
+
+--- schema of CL_train.json (first doc) ---
+list(40)
+ [0] ->
+    dict(3) keys=['id', 'text', 'labels']
+     ['id'] ->
+        str: 'CCI_All_India_Distillers_Association_vs_Haldyn_Glass_GCO100028COM855733'
+     ['text'] ->
+        list(43)
+         [0] ->
+            str: 'Consequent upon the repeal of the MRTP Act this complaint has been received by transfer on 04.03.201'
+
+--- schema of CL_test.json (first doc) ---
+dict(5) keys=['HC_Raghupati_Singhania__vs__Competition_Commission_ofDE201616051616063761COM513489', 'COM_TPM_Consultants_Pvt_Ltd_vs_Competition_Commission_TA2016110716153210127COM903224', 'SC_Ultra Tech Cement Ltd vs Competition Commission of India and Ors 12062013 SC', 'CCI_Ms_Mineral_Enterprises_Limited_vs_Ministry_of_RailCO120089COM803307', 'HC_Vodafone_India_Limited_and_Ors_vs_The_Competition_MH2017051017164746274COM906883']
+ ['HC_Raghupati_Singhania__vs__Competition_Commission_ofDE201616051616063761COM513489'] ->
+    list(18)
+     [0] ->
+        str: 'Manmohan, J. 1 .'
+ ['COM_TPM_Consultants_Pvt_Ltd_vs_Competition_Commission_TA2016110716153210127COM903224'] ->
+    list(230)
+     [0] ->
+        str: 'This appeal is directed against order dated 05.04.2016 passed by the Competition Commission of India'
+CELL FAILED: ValueError could not locate the sentence list inside a document
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase3_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase3_cell2", line 150, in <module>
+  File "phase3_cell2", line 105, in parse_split
+  File "phase3_cell2", line 50, in _extract
+ValueError: could not locate the sentence list inside a document
+
+===== phase 3, cell 3 =====
+CELL FAILED: KeyError 'legal_bpe_32k.json'
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase3_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase3_cell3", line 3, in <module>
+KeyError: 'legal_bpe_32k.json'
+
+===== phase 3, cell 4 =====
+
+===== phase 3, cell 5 =====
+registered architectures: {}
+
+===== phase 3, cell 6 =====
+
+===== phase 3, cell 7 =====
+registered architectures: {'bilstm': '/kaggle/input/datasets/puciitk/cs781-phase1-v3-bilstm-recurrent/final_model.pt'}
+
+===== phase 3, cell 8 =====
+CELL FAILED: KeyError 'CL'
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase3_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase3_cell8", line 3, in <module>
+  File "phase3_cell6", line 104, in run_experiment
+  File "phase3_cell6", line 39, in run_one
+KeyError: 'CL'
+
+===== phase 3, cell 9 =====
+CELL FAILED: NameError name 'BEST' is not defined
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase3_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase3_cell9", line 23, in <module>
+NameError: name 'BEST' is not defined
+
+===== phase 3, cell 10 =====
+CELL FAILED: NameError name 'BEST' is not defined
+Traceback (most recent call last):
+  File "/kaggle/working/children/phase3_run.py", line 6, in <module>
+    try: exec(compile(src, 'phase3_cell%d' % i, 'exec'), G)
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "phase3_cell10", line 6, in <module>
+NameError: name 'BEST' is not defined

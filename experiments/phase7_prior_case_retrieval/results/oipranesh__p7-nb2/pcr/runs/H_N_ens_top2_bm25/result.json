@@ -1,0 +1,12 @@
+{
+ "name": "H_N_ens_top2_bm25",
+ "technique": "hybrid",
+ "note": "0.9 x N_ens_top2 + 0.1 x BM25 (standardised scores; weight tuned on dev)",
+ "control": true,
+ "dev_f1": 0.3579766536964981,
+ "dev_p": 0.3898305084745763,
+ "dev_r": 0.33093525179856115,
+ "dev_queries": 118,
+ "alpha": 0.1,
+ "base": "N_ens_top2"
+}

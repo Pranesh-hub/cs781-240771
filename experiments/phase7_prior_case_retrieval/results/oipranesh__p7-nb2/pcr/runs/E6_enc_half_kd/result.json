@@ -1,0 +1,23 @@
+{
+ "name": "E6_enc_half_kd",
+ "technique": "kd",
+ "note": "knowledge distillation: 6-layer student of E1_enc_full",
+ "control": false,
+ "dev_f1": 0.3435241801000556,
+ "dev_p": 0.37409200968523004,
+ "dev_r": 0.3175745118191161,
+ "dev_queries": 118,
+ "mode": "maxsim",
+ "other_mode_f1": 0.33240689271817675,
+ "eval_minutes": 1.718675394852956,
+ "hp": null,
+ "n_layers": 6,
+ "n_prompt": null,
+ "lr": 3e-05,
+ "steps": 1516,
+ "train_minutes": 28.509533512592316,
+ "params_M": 54.667776,
+ "trainable_M": 54.667776,
+ "peak_mem_gb": 2.1950440406799316,
+ "teacher": "E1_enc_full"
+}

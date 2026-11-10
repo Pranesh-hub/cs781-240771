@@ -1,0 +1,24 @@
+{
+ "arch": "bilstm",
+ "technique": "partial",
+ "base_technique": "partial",
+ "hp": {
+  "frac": 0.5
+ },
+ "n_layers": 0,
+ "strategy": "head_tail",
+ "in_tokens": 512,
+ "sum_tokens": 256,
+ "gen": {
+  "max_new": 256,
+  "min_new": 8,
+  "beams": 1,
+  "no_repeat": 3,
+  "rep_pen": 1.0,
+  "len_pen": 1.0,
+  "sample": false,
+  "dedupe": true
+ },
+ "weights": "raw",
+ "fingerprint": 5.158191680908203
+}

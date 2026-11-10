@@ -1,0 +1,22 @@
+# Phase 7 results (dev, not official)
+
+```
+             system  technique  rule_safe  adopted  counted  dev_f1  dev_p  dev_r                    vs_bm25   mode
+     H_final_hybrid     hybrid      False     True    False  0.3969 0.4322 0.3669 +0.1850 [+0.1475, +0.2222]    NaN
+     B1_bm25_ngrams       bm25      False     True    False  0.3747 0.4080 0.3464 +0.1619 [+0.1302, +0.1964]    NaN
+  F_final_rule_safe      final       True     True    False  0.3702 0.4031 0.3422 +0.1580 [+0.1215, +0.1971]    NaN
+     N_ens_all_top6   ensemble       True     True    False  0.3635 0.3959 0.3361 +0.1513 [+0.1152, +0.1894]    NaN
+  H_N_ens_top2_bm25     hybrid      False     True    False  0.3580 0.3898 0.3309 +0.1459 [+0.1108, +0.1819]    NaN
+            C2_pool       pool       True    False    False  0.3535 0.3850 0.3268 +0.1415 [+0.1031, +0.1801]    NaN
+         N_ens_top2   ensemble       True     True    False  0.3524 0.3838 0.3258 +0.1401 [+0.1045, +0.1770]    NaN
+     E2_enc_partial    partial       True     True     True  0.3502 0.3814 0.3237 +0.1382 [+0.1024, +0.1753] maxsim
+      R2_partial_hn    partial       True     True    False  0.3502 0.3814 0.3237 +0.1380 [+0.1005, +0.1745] maxsim
+         E4_enc_ia3        ia3       True     True     True  0.3480 0.3789 0.3217 +0.1357 [+0.1011, +0.1738] maxsim
+        E1_enc_full       full       True     True     True  0.3457 0.3765 0.3196 +0.1326 [+0.0974, +0.1679]   mean
+      C2_pool_early       pool       True    False    False  0.3457 0.3765 0.3196 +0.1339 [+0.0947, +0.1700]    NaN
+       E3_enc_lorma lorma_plus       True     True     True  0.3446 0.3753 0.3186 +0.1324 [+0.0987, +0.1671] maxsim
+     E6_enc_half_kd         kd       True     True     True  0.3435 0.3741 0.3176 +0.1304 [+0.0963, +0.1660] maxsim
+      E5_enc_prompt     prompt       True     True     True  0.3146 0.3426 0.2909 +0.1013 [+0.0640, +0.1370] maxsim
+Z0_phase1_zero_shot  zero-shot       True     True    False  0.2412 0.2627 0.2230 +0.0250 [-0.0081, +0.0597] maxsim
+            B0_bm25       bm25      False     True    False  0.2123 0.2312 0.1963 +0.0000 [+0.0000, +0.0000]    NaN
+```

@@ -1,0 +1,12 @@
+{
+ "name": "H_final_hybrid",
+ "technique": "hybrid",
+ "note": "Phase 1 ensemble + 0.9 x lexical n-gram BM25",
+ "control": true,
+ "adopted": true,
+ "dev_f1": 0.39688715953307396,
+ "dev_p": 0.4322033898305085,
+ "dev_r": 0.3669064748201439,
+ "dev_queries": 118,
+ "alpha": 0.9
+}

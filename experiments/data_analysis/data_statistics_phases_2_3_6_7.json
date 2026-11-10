@@ -1,0 +1,438 @@
+{
+ "P2": {
+  "fold1": {
+   "docs": 35,
+   "chars_per_doc": {
+    "n": 35,
+    "mean": 31360.285714285714,
+    "median": 26600.0,
+    "p90": 50042.0,
+    "max": 106947.0,
+    "min": 10443.0
+   },
+   "spans": 4120,
+   "spans_per_doc": {
+    "n": 35,
+    "mean": 117.71428571428571,
+    "median": 104.0,
+    "p90": 182.40000000000003,
+    "max": 338.0,
+    "min": 48.0
+   },
+   "label_counts": {
+    "APP": 207,
+    "RESP": 191,
+    "A.COUNSEL": 70,
+    "R.COUNSEL": 87,
+    "JUDGE": 123,
+    "WIT": 67,
+    "AUTH": 535,
+    "COURT": 455,
+    "STAT": 525,
+    "PREC": 624,
+    "DATE": 813,
+    "CASENO": 423
+   },
+   "median_len": {
+    "APP": 12.0,
+    "RESP": 11.0,
+    "A.COUNSEL": 13.0,
+    "R.COUNSEL": 11.0,
+    "JUDGE": 14.0,
+    "WIT": 11.0,
+    "AUTH": 13.0,
+    "COURT": 10.0,
+    "STAT": 15.0,
+    "PREC": 31.0,
+    "DATE": 10.0,
+    "CASENO": 20.0
+   },
+   "nested": 0,
+   "overlapping": 0,
+   "adjacent": 103
+  },
+  "fold2": {
+   "docs": 35,
+   "chars_per_doc": {
+    "n": 35,
+    "mean": 31886.742857142857,
+    "median": 26730.0,
+    "p90": 43136.00000000001,
+    "max": 114044.0,
+    "min": 17216.0
+   },
+   "spans": 4273,
+   "spans_per_doc": {
+    "n": 35,
+    "mean": 122.08571428571429,
+    "median": 106.0,
+    "p90": 209.20000000000005,
+    "max": 403.0,
+    "min": 46.0
+   },
+   "label_counts": {
+    "APP": 200,
+    "RESP": 190,
+    "A.COUNSEL": 125,
+    "R.COUNSEL": 97,
+    "JUDGE": 122,
+    "WIT": 120,
+    "AUTH": 468,
+    "COURT": 558,
+    "STAT": 735,
+    "PREC": 559,
+    "DATE": 762,
+    "CASENO": 337
+   },
+   "median_len": {
+    "APP": 16.0,
+    "RESP": 15.0,
+    "A.COUNSEL": 11.0,
+    "R.COUNSEL": 13.0,
+    "JUDGE": 13.0,
+    "WIT": 11.5,
+    "AUTH": 16.0,
+    "COURT": 10.0,
+    "STAT": 13.0,
+    "PREC": 30.0,
+    "DATE": 10.0,
+    "CASENO": 21.0
+   },
+   "nested": 0,
+   "overlapping": 0,
+   "adjacent": 43
+  },
+  "fold3_docs": 35
+ },
+ "P3": {
+  "CL": {
+   "train": {
+    "docs": 40,
+    "sentences": 10593,
+    "sents_per_doc": {
+     "n": 40,
+     "mean": 264.825,
+     "median": 120.5,
+     "p90": 760.1,
+     "max": 1816.0,
+     "min": 19.0
+    },
+    "words_per_sent": {
+     "n": 10593,
+     "mean": 32.74643632587558,
+     "median": 27.0,
+     "p90": 58.0,
+     "max": 733.0,
+     "min": 1.0
+    },
+    "roles": {
+     "Fact": 2979,
+     "RatioOfTheDecision": 2856,
+     "PrecedentReliedUpon": 1305,
+     "ArgumentRespondent": 996,
+     "ArgumentPetitioner": 976,
+     "RulingByLowerCourt": 438,
+     "Statute": 367,
+     "Dissent": 284,
+     "PrecedentNotReliedUpon": 209,
+     "RulingByPresentCourt": 113,
+     "None": 53,
+     "Issue": 17
+    }
+   },
+   "dev": {
+    "docs": 5,
+    "sentences": 1396,
+    "sents_per_doc": {
+     "n": 5,
+     "mean": 279.2,
+     "median": 184.0,
+     "p90": 614.8000000000001,
+     "max": 848.0,
+     "min": 32.0
+    },
+    "words_per_sent": {
+     "n": 1396,
+     "mean": 33.664756446991404,
+     "median": 28.0,
+     "p90": 57.5,
+     "max": 339.0,
+     "min": 1.0
+    },
+    "roles": {
+     "ArgumentPetitioner": 344,
+     "RatioOfTheDecision": 288,
+     "Fact": 249,
+     "ArgumentRespondent": 236,
+     "PrecedentReliedUpon": 142,
+     "Statute": 58,
+     "RulingByLowerCourt": 56,
+     "RulingByPresentCourt": 18,
+     "Issue": 3,
+     "None": 2
+    }
+   },
+   "test": {
+    "docs": 5,
+    "sentences": 1339
+   }
+  },
+  "IT": {
+   "train": {
+    "docs": 40,
+    "sentences": 6252,
+    "sents_per_doc": {
+     "n": 40,
+     "mean": 156.3,
+     "median": 126.5,
+     "p90": 255.00000000000014,
+     "max": 442.0,
+     "min": 25.0
+    },
+    "words_per_sent": {
+     "n": 6252,
+     "mean": 35.281030070377476,
+     "median": 28.0,
+     "p90": 67.0,
+     "max": 1054.0,
+     "min": 1.0
+    },
+    "roles": {
+     "RatioOfTheDecision": 1445,
+     "Fact": 1119,
+     "Statute": 732,
+     "PrecedentReliedUpon": 640,
+     "ArgumentPetitioner": 637,
+     "RulingByLowerCourt": 436,
+     "PrecedentNotReliedUpon": 360,
+     "ArgumentRespondent": 352,
+     "None": 244,
+     "RulingByPresentCourt": 194,
+     "Issue": 90,
+     "PrecedentOverruled": 3
+    }
+   },
+   "dev": {
+    "docs": 5,
+    "sentences": 746,
+    "sents_per_doc": {
+     "n": 5,
+     "mean": 149.2,
+     "median": 120.0,
+     "p90": 278.40000000000003,
+     "max": 382.0,
+     "min": 45.0
+    },
+    "words_per_sent": {
+     "n": 746,
+     "mean": 32.265415549597854,
+     "median": 26.0,
+     "p90": 60.5,
+     "max": 287.0,
+     "min": 1.0
+    },
+    "roles": {
+     "Fact": 195,
+     "RatioOfTheDecision": 115,
+     "PrecedentReliedUpon": 112,
+     "Statute": 62,
+     "ArgumentPetitioner": 56,
+     "PrecedentNotReliedUpon": 50,
+     "RulingByLowerCourt": 46,
+     "ArgumentRespondent": 36,
+     "None": 31,
+     "RulingByPresentCourt": 31,
+     "Issue": 12
+    }
+   },
+   "test": {
+    "docs": 5,
+    "sentences": 858
+   }
+  }
+ },
+ "P6": {
+  "train_docs": 7030,
+  "test_docs": 100,
+  "doc_words": {
+   "n": 7030,
+   "mean": 4368.499715504979,
+   "median": 3128.5,
+   "p90": 7851.4000000000015,
+   "max": 139645.0,
+   "min": 93.0
+  },
+  "summary_words": {
+   "n": 7030,
+   "mean": 839.7578947368421,
+   "median": 638.0,
+   "p90": 1501.0,
+   "max": 27768.0,
+   "min": 0.0
+  },
+  "compression": {
+   "n": 7030,
+   "mean": 0.23510930764400054,
+   "median": 0.2171351507561892,
+   "p90": 0.39567639933698845,
+   "max": 9.150537634408602,
+   "min": 0.0
+  },
+  "novel_trigram_fraction": {
+   "n": 1499,
+   "mean": 0.42522487865189224,
+   "median": 0.41238471673254284,
+   "p90": 0.6028045341270399,
+   "max": 0.8686868686868687,
+   "min": 0.10873549175320707
+  },
+  "unigram_in_doc": {
+   "n": 1500,
+   "mean": 0.9148817253313066,
+   "median": 0.9213340557805282,
+   "p90": 0.9504674616068418,
+   "max": 0.9824561403508771,
+   "min": 0.0
+  },
+  "test_doc_words": {
+   "n": 100,
+   "mean": 4782.71,
+   "median": 3171.0,
+   "p90": 8562.800000000007,
+   "max": 39695.0,
+   "min": 511.0
+  },
+  "corr_len": 0.7484779706982909
+ },
+ "P7": {
+  "train": {
+   "queries": 827,
+   "pool": 4320,
+   "query_words": {
+    "n": 827,
+    "mean": 6807.536880290206,
+    "median": 4508.0,
+    "p90": 12602.199999999999,
+    "max": 119513.0,
+    "min": 130.0
+   },
+   "cand_words": {
+    "n": 4320,
+    "mean": 6293.949074074074,
+    "median": 3632.5,
+    "p90": 12422.0,
+    "max": 410597.0,
+    "min": 3.0
+   },
+   "query_in_pool": 1.0,
+   "gold": {
+    "n": 827,
+    "mean": 6.418379685610641,
+    "median": 4.0,
+    "p90": 14.0,
+    "max": 52.0,
+    "min": 0.0
+   },
+   "gold_hist": {
+    "2": 134,
+    "18": 6,
+    "1": 121,
+    "16": 6,
+    "8": 32,
+    "5": 51,
+    "3": 100,
+    "20": 37,
+    "6": 44,
+    "4": 78,
+    "11": 29,
+    "10": 25,
+    "14": 22,
+    "0": 10,
+    "12": 21,
+    "13": 16,
+    "7": 41,
+    "9": 27,
+    "17": 10,
+    "15": 11,
+    "19": 6
+   },
+   "pool_relevant_to_any": 0.9506944444444444,
+   "queries_per_relevant": 1.292427562697833,
+   "gold_in_pool": 1.0
+  },
+  "dev": {
+   "queries": 118,
+   "pool": 1023,
+   "query_words": {
+    "n": 118,
+    "mean": 8397.805084745763,
+    "median": 4619.5,
+    "p90": 15333.299999999996,
+    "max": 106169.0,
+    "min": 559.0
+   },
+   "cand_words": {
+    "n": 1023,
+    "mean": 8609.608015640273,
+    "median": 4036.0,
+    "p90": 16598.800000000014,
+    "max": 410597.0,
+    "min": 38.0
+   },
+   "query_in_pool": 1.0,
+   "gold": {
+    "n": 118,
+    "mean": 8.245762711864407,
+    "median": 5.0,
+    "p90": 17.299999999999997,
+    "max": 92.0,
+    "min": 1.0
+   },
+   "gold_hist": {
+    "11": 6,
+    "20": 9,
+    "15": 2,
+    "9": 5,
+    "3": 7,
+    "6": 7,
+    "12": 4,
+    "4": 9,
+    "8": 4,
+    "2": 18,
+    "1": 15,
+    "5": 14,
+    "10": 2,
+    "7": 9,
+    "18": 1,
+    "13": 2,
+    "19": 2,
+    "17": 1,
+    "16": 1
+   },
+   "pool_relevant_to_any": 0.8993157380254154,
+   "queries_per_relevant": 1.057608695652174,
+   "gold_in_pool": 1.0
+  },
+  "test": {
+   "queries": 237,
+   "pool": 1727,
+   "query_words": {
+    "n": 237,
+    "mean": 6700.050632911392,
+    "median": 4653.0,
+    "p90": 14064.800000000001,
+    "max": 91838.0,
+    "min": 117.0
+   },
+   "cand_words": {
+    "n": 1727,
+    "mean": 6980.3815865663,
+    "median": 3947.0,
+    "p90": 13490.80000000002,
+    "max": 410597.0,
+    "min": 38.0
+   },
+   "query_in_pool": 1.0
+  }
+ }
+}

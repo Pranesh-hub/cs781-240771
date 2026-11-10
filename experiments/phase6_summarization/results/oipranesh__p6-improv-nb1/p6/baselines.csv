@@ -1,0 +1,4 @@
+baseline,bertscore_f1,rouge1_f,rougeL_f,fact_coverage,len_ratio,repetition3,bertscore_f1_short,rouge1_f_short,bertscore_f1_long,rouge1_f_long
+B1_lead_k,0.8301,0.4957,0.2475,0.4752,1.2911,0.0935,0.8367,0.5315,0.8233,0.4596
+B2_importance_k,0.8463,0.5457,0.2901,0.4138,1.3038,0.1239,0.8535,0.5746,0.839,0.5164
+"B3_ORACLE_k (upper bound, reads the reference)",0.8649,0.6182,0.4059,0.4958,1.298,0.1119,0.8722,0.6416,0.8576,0.5946

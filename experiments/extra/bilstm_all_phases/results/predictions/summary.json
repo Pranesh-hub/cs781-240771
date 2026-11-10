@@ -1,0 +1,44 @@
+[
+ {
+  "phase": 2,
+  "status": "ok | no prediction file was produced (read log.txt)",
+  "minutes": 0.7,
+  "check": "",
+  "source": null
+ },
+ {
+  "phase": 3,
+  "status": "ok | no prediction file was produced (read log.txt)",
+  "minutes": 0.2,
+  "check": "",
+  "source": null
+ },
+ {
+  "phase": 4,
+  "status": "ok",
+  "minutes": 20.4,
+  "check": "1517 cases, 50.0% predicted 1",
+  "source": "/kaggle/working/cjpe/submissions/P5_bilstm_partial.json"
+ },
+ {
+  "phase": 5,
+  "status": "ok",
+  "minutes": 23.0,
+  "check": "13019 cases, 12.55 statutes/case",
+  "source": "/kaggle/working/lsi/submissions/E4_bilstm_partial.json"
+ },
+ {
+  "phase": 6,
+  "status": "ok | OUTPUT INVALID: expected [{id, summary}]",
+  "minutes": 7.9,
+  "check": "",
+  "source": "/kaggle/working/p6/checkpoints/S7_bilstm_partial.json"
+ },
+ {
+  "phase": 7,
+  "status": "ok | no prediction file was produced (read log.txt)",
+  "minutes": 2.6,
+  "check": "",
+  "source": null
+ }
+]

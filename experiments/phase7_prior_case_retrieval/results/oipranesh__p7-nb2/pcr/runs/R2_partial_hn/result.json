@@ -1,0 +1,29 @@
+{
+ "name": "R2_partial_hn",
+ "technique": "partial",
+ "note": "partial with round-2 hard negatives (3 per query, mined by E2_enc_partial)",
+ "control": true,
+ "adopted": true,
+ "dev_f1": 0.35019455252918286,
+ "dev_p": 0.3813559322033898,
+ "dev_r": 0.3237410071942446,
+ "dev_queries": 118,
+ "mode": "maxsim",
+ "chunks": 12,
+ "other_mode_f1": 0.34018899388549195,
+ "eval_minutes": 3.6040366530418395,
+ "hp": {
+  "frac": 0.5
+ },
+ "n_layers": null,
+ "n_prompt": null,
+ "lr": 3e-05,
+ "steps": 831,
+ "train_minutes": 33.2876210252444,
+ "params_M": 84.758016,
+ "trainable_M": 30.091008,
+ "peak_mem_gb": 3.2336764335632324,
+ "teacher": null,
+ "n_neg": 3,
+ "hard_negatives": "round 2 (mined by a trained model)"
+}

@@ -1,0 +1,19 @@
+{
+ "name": "G2_gpt2_hier4",
+ "model": "gpt2_new",
+ "family": "gpt2",
+ "K": 4,
+ "L": 512,
+ "params_M": 111.8,
+ "steps": 1308,
+ "cases_seen": 20928,
+ "best_eval_step": 1308,
+ "threshold": 0.44999999999999996,
+ "dev_macro_f1": 0.6420446783798499,
+ "dev_macro_f1_at_0p5": 0.6300054772693323,
+ "dev_macro_p": 0.6457138048607585,
+ "dev_macro_r": 0.6434905530136974,
+ "dev_cases": 3505,
+ "minutes": 54.7,
+ "history": "[(436, 0.5945), (872, 0.6399), (1308, 0.6432)]"
+}

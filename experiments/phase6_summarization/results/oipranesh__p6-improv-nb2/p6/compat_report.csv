@@ -1,0 +1,5 @@
+checkpoint,family,class_,params_M,context,hidden,step,generates,check,value,expected
+gpt2_new,gpt2,GPT2LMHeadModel,110.0,512.0,768.0,,yes (decoder-only),LM loss on validation documents,3.181,about 3.2 (Phase 1 validation loss 3.24)
+modernbert,modernbert,ModernBertForMaskedLM,85.4,512.0,768.0,,NO by itself -> paired with the Phase 1 GPT-2 decoder (encdec),masked-token accuracy (15% masked),0.676,well above 0 (Phase 1 MLM loss 1.74)
+bilstm,bilstm,,,,,,NOT ATTACHED: skipped,-,,-
+modernbert+gpt2_new,encdec,,223.2,,,,yes (EncoderDecoderModel),forward runs; new cross-attention parameters (M),28.37,the only new weights

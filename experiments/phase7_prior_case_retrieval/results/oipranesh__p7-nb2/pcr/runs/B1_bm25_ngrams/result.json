@@ -1,0 +1,12 @@
+{
+ "name": "B1_bm25_ngrams",
+ "technique": "bm25",
+ "note": "lexical: unigram + n-gram BM25 fusion (1, 1, 1), weights tuned on the training split (not a Phase 1 model)",
+ "control": true,
+ "adopted": true,
+ "dev_f1": 0.37465258476931623,
+ "dev_p": 0.40799031476997577,
+ "dev_r": 0.34635149023638234,
+ "dev_queries": 118,
+ "weights": "(1, 1, 1)"
+}

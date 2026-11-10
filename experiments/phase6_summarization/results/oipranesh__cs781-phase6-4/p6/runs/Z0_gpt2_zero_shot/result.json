@@ -1,0 +1,22 @@
+{
+ "name": "Z0_gpt2_zero_shot",
+ "part": "P1",
+ "arch": "gpt2",
+ "model": "gpt2",
+ "technique": "zero-shot",
+ "base_technique": "none",
+ "control": true,
+ "strategy": "head",
+ "val_docs": 100,
+ "eval_sig": "06b37822b7@100",
+ "bertscore_f1": 0.8033144640922546,
+ "rouge1_f": 0.28594126920748303,
+ "rougeL_f": 0.16892922061579085,
+ "fact_coverage": 0.09236716313120046,
+ "len_ratio": 0.4656733683109624,
+ "repetition3": 0.0422332098448061,
+ "unsupported": 0.44672688572303465,
+ "gen_sec_per_doc": 0.205,
+ "rouge_impl": "rouge_score",
+ "bertscore_setting": "roberta-large, layer 17, rescale=False"
+}

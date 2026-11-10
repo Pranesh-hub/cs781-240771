@@ -1,0 +1,12 @@
+{
+ "name": "F_final_rule_safe",
+ "technique": "final",
+ "note": "the adopted chain (Phase 1 models only)",
+ "control": true,
+ "adopted": true,
+ "dev_f1": 0.3702056698165648,
+ "dev_p": 0.40314769975786924,
+ "dev_r": 0.34224049331963,
+ "dev_queries": 118,
+ "steps": "[\"ensemble of the neural runs ['R2_partial_hn', 'E2_enc_partial', 'E4_enc_ia3', 'E1_enc_full', 'E3_enc_lorma', 'E6_enc_half_kd', 'E5_enc_prompt']\"]"
+}
