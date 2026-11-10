@@ -4,6 +4,7 @@
 
 ## 1_gpt2_decoder
 GPT-2-style decoder (our Phase 1 model)
+**Best:** `p3__gpt2__rr_rolling_checkpoints_publishing__6d390d6f69_c00.ipynb`
 
 * `p3__gpt2__phase3_audited_fixed.ipynb`
 * `p3__gpt2__phase3_full_fixed_3000step.ipynb`

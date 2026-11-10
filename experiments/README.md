@@ -39,3 +39,7 @@ Every notebook under `phaseN_*/notebooks/` is named `pN__<models>__<topic>.ipynb
 * `<topic>`: what the notebook does. Kaggle's auto-generated names were replaced by a description plus the Kaggle id and copy number (`__6d390d6f69_c04`: copy `(4)` of that Kaggle notebook; the copy number is the download order, not the run order).
 
 `RENAME_MAP.csv` maps original paths to current paths where the mapping could be recovered.
+
+## Finding the best notebook
+
+Every architecture folder with several notebooks has its own `README.md` that names the best notebook and lists the rest. `notebooks/ARCHITECTURES.md` in each phase gives the same per-folder summary. The best notebook of each phase as a whole is in the repository root (`phaseN_*/`), and it is code-identical to the experiment file named in the folder README (Phase 1 is a from-scratch reimplementation, so it has no identical file).

@@ -4,6 +4,7 @@
 
 ## 1_gpt2_decoder
 GPT-2-style decoder (our Phase 1 model)
+**Best:** `p6__gpt2+modernbert__part3_gpt2_encdec_s3_s4_s5_s8_s9.ipynb`
 
 * `p6__gpt2+modernbert__part3_gpt2_encdec_s3_s4_s5_s8_s9.ipynb`
 * `p6__gpt2+modernbert__part3_gpt2_encdec_s3_s4_s5_s8_s9_2.ipynb`
@@ -15,12 +16,14 @@ ModernBERT-style encoder (our Phase 1 model)
 
 ## 3_t5_encoder_decoder
 T5-style encoder-decoder (our Phase 1 model)
+**Best:** `p6__t5__part2_t5_s1_s2.ipynb`
 
 * `p6__t5__part2_t5_s1_s2.ipynb`
 * `p6__t5__part2_t5_s1_s2_2.ipynb`
 
 ## 4_bilstm
 BiLSTM (our Phase 1 model)
+**Best:** `p6__gpt2+bilstm__part4_kd_bilstm_s6_s7.ipynb`
 
 * `p6__gpt2+bilstm__part4_kd_bilstm_s6_s7.ipynb`
 * `p6__gpt2+bilstm__part4_kd_bilstm_s6_s7_2.ipynb`
@@ -33,6 +36,7 @@ Other Phase 1 architectures (Mamba, RWKV, RetNet) and architecture-comparison no
 
 ## 6_multi_architecture_pipelines
 Pipelines that train or compare several architectures in one notebook
+**Best:** `p6__gpt2+modernbert+t5+bilstm__part7_combined_under7h.ipynb`
 
 * `p6__gpt2+modernbert+t5+bilstm__followup_decoding_fix.ipynb`
 * `p6__gpt2+modernbert+t5+bilstm__part0_selftest.ipynb`

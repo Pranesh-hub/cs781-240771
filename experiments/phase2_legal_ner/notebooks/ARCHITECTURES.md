@@ -4,6 +4,7 @@
 
 ## 1_gpt2_decoder
 GPT-2-style decoder (our Phase 1 model)
+**Best:** `p2__gpt2__ner_self_contained_experiments__finalv2_c03.ipynb`
 
 * `p2__gpt2__experiments_clean.ipynb`
 * `p2__gpt2__champion_plus_rules_run_cells.ipynb`

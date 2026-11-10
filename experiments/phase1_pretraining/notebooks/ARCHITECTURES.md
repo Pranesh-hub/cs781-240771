@@ -4,6 +4,7 @@
 
 ## 1_gpt2_decoder
 GPT-2-style decoder (our Phase 1 model)
+**Best:** `p1__gpt2__1000_step_inference_only.ipynb`
 
 * `p1__gpt2__decoder_transformer_scaffold_v3__copy1.ipynb`
 * `p1__gpt2__01_decoder_transformer.ipynb`
@@ -26,6 +27,7 @@ GPT-2-style decoder (our Phase 1 model)
 
 ## 2_modernbert_encoder
 ModernBERT-style encoder (our Phase 1 model)
+**Best:** `p1__modernbert__nb2_encoder_modernbert_v2.ipynb`
 
 * `p1__modernbert__modernbert_copy1.ipynb`
 * `p1__modernbert__modernbert.ipynb`
@@ -34,18 +36,21 @@ ModernBERT-style encoder (our Phase 1 model)
 
 ## 3_t5_encoder_decoder
 T5-style encoder-decoder (our Phase 1 model)
+**Best:** `p1__t5+modernbert+gpt2__nb3_encoder_decoder_t5.ipynb`
 
 * `p1__t5__t5.ipynb`
 * `p1__t5+modernbert+gpt2__nb3_encoder_decoder_t5.ipynb`
 
 ## 4_bilstm
 BiLSTM (our Phase 1 model)
+**Best:** `p1__bilstm__bislstm_2.ipynb`
 
 * `p1__bilstm__bislstm.ipynb`
 * `p1__bilstm__bislstm_2.ipynb`
 
 ## 5_other_architectures_mamba_rwkv_retnet
 Other Phase 1 architectures (Mamba, RWKV, RetNet) and architecture-comparison notebooks
+**Best:** `None.ipynb`(none; see folder README)
 
 * `p1__mamba__02_mamba_ssm.ipynb`
 * `p1__rwkv__03_rwkv.ipynb`

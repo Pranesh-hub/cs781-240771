@@ -9,6 +9,7 @@ GPT-2-style decoder (our Phase 1 model)
 
 ## 2_modernbert_encoder
 ModernBERT-style encoder (our Phase 1 model)
+**Best:** `p7__modernbert__nb2.ipynb`
 
 * `p7__modernbert__pcr_six_experiments_modernbert_biencoder__16525fdb51.ipynb`
 * `p7__modernbert__nb2.ipynb`
@@ -26,6 +27,7 @@ T5-style encoder-decoder (our Phase 1 model)
 
 ## 4_bilstm
 BiLSTM (our Phase 1 model)
+**Best:** `p7__bilstm__bilstm_retriever.ipynb`
 
 * `p7__bilstm__bilstm_retriever.ipynb`
 * `bilstm_all_phases__runs_phase_7_too.ipynb (copy of extra/bilstm_all_phases)`
